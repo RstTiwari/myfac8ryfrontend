@@ -1,0 +1,133 @@
+.hero_content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+.hero_container{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background: url('../../Assets/myFac8ryhomeSection.png') no-repeat center center/cover;
+
+}
+
+.hero_container .hero_container__section{
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+ .hero_container__section .hero_container__section1{
+    padding: 80px 0px 0px 0px;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+
+}
+.hero_container__section1 .row{
+    position: absolute;
+    display: flex;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+ .hero_container .hero_homepage{
+    width: 50%;
+    height: 100vh;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 123;
+   
+ }
+ .hero_container  .hero__landingheader h1{
+    color: #0a304e;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+     margin-bottom: 16px;
+  
+ }
+
+ 
+ .row .hero__landingtext__subheadline{
+    color: #0c171f;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 24px;
+ }
+ .row .hero__landingtext__symbol{
+    display: flex;
+    margin-bottom: 48px;
+ }
+ .row .hero__landingtext__symbol1{
+    display: flex;
+    margin-right: 14px;
+    color: #22445f;
+    align-items: center;
+ }
+ .fa_calender{
+    font-weight:400
+ }
+ .hero__landingtext__symbol__time {
+    font-size: 32px;
+    margin-right: 12px;
+    padding-top: 6px;
+ }
+ .hero__landingtext__symbol__text{
+    max-width: 169px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+ }
+ .row .hero__landingtext__symbol2{
+    display: flex;
+    margin-right: 14px;
+    color: #22445f;
+    align-items: center;
+ }
+ .hero__landingtext__symbol__quality {
+    font-size: 32px;
+    margin-right: 12px;
+    padding-top: 6px;
+}
+.fa_shield{
+    font-weight:400;
+}
+.hero__landing__logo{
+    display: flex;
+}
+.instant__quote__button{
+    display: table;
+    border-radius: 4px;
+    background-color: #0e6aed;
+    color: #f5faff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 12px 48px;
+}
+.secure__lock{
+    font-size: 12px;
+    font-weight: 600;
+    color: #54646e;
+}
+.fa__lock{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

@@ -1,0 +1,60 @@
+
+.industrial__card{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+.industrial__card .row {
+    position: absolute;
+    height: 100vh;
+    background-color:transparent;
+    margin-top: 450px;
+    padding: 35px ;
+    
+ 
+    
+}
+.row .continer__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+   
+}
+.row .industrial__card__desktop{
+     flex: 1 0 21%;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.row .card__header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.row .card__header__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #0a304e;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.card__header__icon{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    border-radius: 10px;
+}
+
+.industrial__card__mobile{
+    display: none;
+}
