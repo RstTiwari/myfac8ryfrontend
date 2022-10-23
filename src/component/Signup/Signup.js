@@ -17,29 +17,19 @@ const navigate = useNavigate()
 
 const handleSubmit = async (event) => {
   event.preventDefault();
-  if (
-    !signup.companyName ||
-    !signup.name ||
-    !signup.email ||
-    !signup.number ||
-    !signup.password
-  ) {
-    alert("Please provide all Details");
-  } else {
     setsignup(signup);
-    console.log("signup", signup);
-    let data = await axios.post("http://localhost:4000/api/signup", signup);
-    console.log("data", data);
-    if (data) {
-       alert("user can not created please try again");
-    } else {
-      alert("let the user get the values")
+    let response = await axios.post("http://localhost:4000/api/signup", signup);
+    console.log(response.data);
+    if(response.data.success === 0){
+      alert(`${response.data.message}`)
+    }else{
+    navigate("/signin");
+    alert(`${response.data.message}`);
+   
     }
-    console.log(data);
-  }
-
 
   }
+
   return (
     <div>
       <>
@@ -101,7 +91,7 @@ const handleSubmit = async (event) => {
                   />
 
                   <button type="submit" onClick={handleSubmit}>
-                    <a>SIGN Up</a>
+                    SIGN Up
                   </button>
                 </form>
                 <div className="signup-page">

@@ -19,23 +19,29 @@ const Header = () => {
                 <a>Capabilities</a>
               </li>
               <li>
-                <a>Resources</a>
+                <a>Hardware</a>
               </li>
               <li>
-                <a>Become Manufacturing Partner</a>
+                <a>Raw Material</a>
+              </li>
+              <li>
+                <a>Become Supplier</a>
+              </li>
+              <li>
+                <a>Become Manufactruing Partner</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="signin__button">
           <div className="">
-            <a>
+            <a href="/signin">
               <button>Sign In </button>
             </a>
           </div>
         </div>
         <div className="getQuote__btn">
-          <button className="btn">Get a Quote</button>
+          <button className="btn">Get Quote</button>
         </div>
 
         <div className="hamburger" onClick={handleClick}>
@@ -47,7 +53,6 @@ const Header = () => {
         </div>
       </div>
     </header>
-    
   );
 };
 
