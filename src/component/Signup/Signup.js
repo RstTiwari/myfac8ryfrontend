@@ -17,16 +17,22 @@ const navigate = useNavigate()
 
 const handleSubmit = async (event) => {
   event.preventDefault();
+  if (!signup.companyName || !signup.email || !signup.name || !signup.number){
+    alert("please fill all details")
+  }else{
     setsignup(signup);
-    let response = await axios.post("http://localhost:4000/api/signup", signup);
-    console.log(response.data);
-    if(response.data.success === 0){
-      alert(`${response.data.message}`)
-    }else{
-    navigate("/signin");
-    alert(`${response.data.message}`);
-   
+    let response = await axios.post(
+      "https://myfac8ryapi.vercel.app/api/signup",
+      signup
+    );
+    if (response.data.success === 0) {
+      alert(`${response.data.message}`);
+    } else {
+      navigate("/signin");
+      alert(`${response.data.message}`);
     }
+
+  } 
 
   }
 

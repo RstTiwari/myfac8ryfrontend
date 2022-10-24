@@ -16,19 +16,19 @@ const Header = () => {
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li>
-                <a>Capabilities</a>
+                <a href="/#">Capabilities</a>
               </li>
               <li>
-                <a>Hardware</a>
+                <a href="/">Hardware</a>
               </li>
               <li>
-                <a>Raw Material</a>
+                <a href="/">Raw Material</a>
               </li>
               <li>
-                <a>Become Supplier</a>
+                <a href="/">Become Supplier</a>
               </li>
               <li>
-                <a>Become Manufactruing Partner</a>
+                <a href="/">Become  Vendor</a>
               </li>
             </ul>
           </div>

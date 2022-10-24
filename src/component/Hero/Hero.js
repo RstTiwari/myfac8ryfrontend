@@ -19,9 +19,9 @@ const Hero = () => {
                   </div>
                   <div className="hero__landingtext">
                     <div className="hero__landingtext__subheadline">
-                      With over 200 manufacturers , suppliers in Vasai, our network has the
-                      capacity you need for prototyping , production and mass
-                      production.
+                      With over 200 manufacturers , suppliers in Vasai,
+                      our network has the capacity you need for prototyping,
+                      production and mass production.
                     </div>
                     <div className="hero__landingtext__symbol">
                       <div className="hero__landingtext__symbol1">
@@ -45,7 +45,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="hero__landing__logo">
-                    <a className="instant__quote__button">
+                    <a href="/" className="instant__quote__button">
                       Get Your Instant Quote
                     </a>
                   </div>

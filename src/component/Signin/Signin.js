@@ -11,16 +11,23 @@ const Signin = () => {
  let navigate = useNavigate()
   const handleSubmit = async (e)=>{
     e.preventDefault()
-    setLogin(login)
-    console.log(login)
-    let response = await axios.post("http://localhost:4000/api/signin", login);
-    console.log("response", response);
-    if(response.data.success === 0){
-      alert(`${response.data.message}`);
+    if(!login.email || !login.password){
+      alert("Pleas Provide all details")
     }else{
-    console.log("response", response);
-    navigate("/");
+          setLogin(login);
+          let response = await axios.post(
+            "https://myfac8ryapi.vercel.app/api/signin",
+            login
+          );
+          if (response.data.success === 0) {
+            alert(`${response.data.message}`);
+          } else {
+            console.log("response", response);
+            navigate("/");
+          }
+
     }
+
 
 
   }
@@ -61,10 +68,10 @@ const Signin = () => {
                   <span>Remember me</span>
                 </div>
                 <div className="forget-pass">
-                  <a href="#">Forgot Password ?</a>
+                  <a href="/">Forgot Password ?</a>
                 </div>
                 <button type="submit" onClick={handleSubmit}>
-                   LOG-IN
+                  LOG-IN
                 </button>
               </form>
               <div className="signup-page">

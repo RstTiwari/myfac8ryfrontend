@@ -5,7 +5,6 @@ const Orderprocess = () => {
   return (
     <div className="order__process">
       <div className="order__process_container">
-       <h1 className="order__process__title">Our Order Process</h1> 
         <div className="order__process_row">
           <ol class="ProgressBar">
             <li class="ProgressBar-step">

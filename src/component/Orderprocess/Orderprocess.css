@@ -1,9 +1,9 @@
 .ProgressBar {
-  margin-top: 1300px ;
+  margin-top: 1400px ;
   padding: 2em 0 3em;
   height: auto;
   list-style: none;
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,25 +98,43 @@
 @media screen and (max-width:940px) {
 
   .ProgressBar{
+    display: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 300px;
-    margin-top: 2300px;
+    margin-top:2600px;
   }
   .ProgressBar-stepLabel {
+    display: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   text-transform: uppercase;
   position: absolute;
   font-weight: bold;
   height: auto;
   color: rgba(0, 0, 0, 0.85);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 .ProgressBar-step:before, .ProgressBar-step:after {
   display: flex;
+  display: none;
+  flex-direction: column;
   margin-top: -98px;
+}
+.ProgressBar-icon {
+  display: none;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #1d16ef;
+  fill: #1d16ef;
+  border-radius: 50%;
+  padding: 0.5em;
+  max-width: 100%;
+  z-index: 10;
+  position: relative;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }
 .ProgressBar-stepLabel p{
   display:none;

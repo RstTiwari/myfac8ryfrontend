@@ -17,6 +17,7 @@ header {
     border-bottom: 3px solid #eee;
     align-items: center;
 }
+
 .navbar .container__logo{
     font-size: 35px;
     flex: 5%;
