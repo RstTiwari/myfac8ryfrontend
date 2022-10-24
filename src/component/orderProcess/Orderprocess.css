@@ -1,0 +1,124 @@
+.ProgressBar {
+  margin-top: 1300px ;
+  padding: 2em 0 3em;
+  height: auto;
+  list-style: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+-ms-flex-pack: justify;
+ justify-content: space-between;
+	cursor: pointer;
+}
+
+.ProgressBar-step {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.ProgressBar-step:before, .ProgressBar-step:after {
+  content: "";
+  height: 0.5em;
+  background-color: #1d16ef;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: -50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+.ProgressBar-step:first-child:before, .ProgressBar-step:first-child:after {
+  display: none;
+}
+.ProgressBar-step:after {
+  background-color: #1d16ef;
+  width: 0%;
+}
+.ProgressBar-step.is-complete + .ProgressBar-step.is-current:after, .ProgressBar-step.is-complete + .ProgressBar-step.is-complete:after {
+  width: 100%;
+}
+
+.ProgressBar-icon {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #1d16ef;
+  fill: #1d16ef;
+  border-radius: 50%;
+  padding: 0.5em;
+  max-width: 100%;
+  z-index: 10;
+  position: relative;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+.is-current .ProgressBar-icon {
+  fill: #FFF;
+  background-color: #FFF;
+	border: 3px solid #7ED321;
+	transition: all .25s ease-out;
+}
+.is-complete .ProgressBar-icon {
+  fill: #DBF1FF;
+  background-color: #7ED321;
+	transition: all .25s ease-out;
+}
+
+.ProgressBar-stepLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  position: absolute;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  padding-top: 0.5em;
+  font-size: 1.125rem;
+  width: 100%;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+.ProgressBar-stepLabel p{
+  display: flex;
+  text-align: center;
+   align-items: center;
+    max-width: 75%;
+     font-size: 0.75rem;
+    color: #9F9FA3;
+    margin-top: 0.5rem;
+}
+.is-current > .ProgressBar-stepLabel, .is-complete > .ProgressBar-stepLabel {
+  color: #7ED321;
+}
+
+@media screen and (max-width:940px) {
+
+  .ProgressBar{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-top: 2300px;
+  }
+  .ProgressBar-stepLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  position: absolute;
+  font-weight: bold;
+  height: auto;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 0.7rem;
+}
+.ProgressBar-step:before, .ProgressBar-step:after {
+  display: flex;
+  margin-top: -98px;
+}
+.ProgressBar-stepLabel p{
+  display:none;
+}
+}
