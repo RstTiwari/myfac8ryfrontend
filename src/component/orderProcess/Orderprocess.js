@@ -1,5 +1,5 @@
 import React from 'react'
-import "../orderProcess/Orderprocess.css";
+import "./Orderprocess.css";
 
 const Orderprocess = () => {
   return (

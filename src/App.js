@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./component/Header/Header";
 import Hero from "./component/Hero/Hero";
 import IndustrialCard from "./component/IndustrialCards/IndustrialCard";
-import Signin from "./component/SignIn/Signin"
+
+import Signin   from "./component/Signin/Signin"
 import Signup from "./component/Signup/Signup";
 import Turbocharge from "./component/Turbocharge/Turbocharge";
-import Orderprocess from "./component/orderProcess/Orderprocess";
+import Orderprocess from "./component/OrderProcess/Orderprocess";
 
 function App() {
   return (
