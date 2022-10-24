@@ -7,7 +7,7 @@ import IndustrialCard from "./component/IndustrialCards/IndustrialCard";
 import Signin   from "./component/Signin/Signin"
 import Signup from "./component/Signup/Signup";
 import Turbocharge from "./component/Turbocharge/Turbocharge";
-import Orderprocess from "./component/OrderProcess/Orderprocess";
+import Orderprocess from "./component/Orderprocess/Orderprocess";
 
 function App() {
   return (
