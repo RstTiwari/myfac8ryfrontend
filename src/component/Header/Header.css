@@ -112,7 +112,7 @@ header {
         position: absolute;
         display: flex;
         flex-direction: column;
-        align-items:start;
+        align-items:flex-start;
         top: 50px;
         right: -100%;
         width: 100%;
