@@ -10,7 +10,7 @@ function Footer() {
           Put your parts into production today
         </p>
         <div className="hero__landing__logo">
-          <a href="/" className="instant__quote__button">
+          <a href="/customerarea" className="instant__quote__button">
             Get Your Instant Quote
           </a>
         </div>
