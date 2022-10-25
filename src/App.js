@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Signin from "./component/Signin/Signin";
 import Signup from "./component/Signup/Signup";
+import SignUpHeader  from "./component/Header/SignUpHeader"
 import Home from "./Home";
+import Coutomerarea from "./component/Coustomerarea/Coutomerarea";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
             path="/signin"
             element={
               <>
+                <SignUpHeader />
                 <Signin />
               </>
             }
@@ -23,7 +26,17 @@ function App() {
             path="/signup"
             element={
               <>
+                <SignUpHeader />
                 <Signup />
+              </>
+            }
+          />
+          <Route
+            path="/customerarea"
+            element={
+              <>
+                <SignUpHeader />
+                <Coutomerarea />
               </>
             }
           />
