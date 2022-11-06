@@ -22,25 +22,15 @@ const Header = () => {
               <li>
                 <a href="/customerarea">Coustmer Area</a>
               </li>
+              <li>
+                <a href="/signin">Sign In</a>
+              </li>
+
             </ul>
           </div>
         </div>
         {location.pathname === "/customerarea" ? (
           <>
-            <div className="signin__button">
-              <div className="">
-                <a href="/signin">
-                  <button>Sign In </button>
-                </a>
-              </div>
-            </div>
-            <div className="signin__button">
-              <div className="">
-                <a href="/signin">
-                  <button>Sign Up </button>
-                </a>
-              </div>
-            </div>
           </>
         ) : (
           <></>

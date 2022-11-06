@@ -1,48 +1,47 @@
-import { React, useState } from "react";
-import { HiMenu, HiOutlineX } from "react-icons/hi";
+import axios from "axios";
+import { React, useEffect, useState } from "react";
+import { HiMenu, HiOutlineX, HiOutlineLogin } from "react-icons/hi";
 import "./Header.css";
 
 const Header = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click);  
   return (
     <header>
       <div className="navbar">
         <div className="container__logo">
-          <a href="/"><span>My</span>
-          Fac8ry</a>
-
+          <a href="/">
+            <span>My</span>
+            Fac8ry
+          </a>
         </div>
         <div className="container">
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li>
-                <a href="/">Capabilities</a>
-              </li>
-              <li>
-                <a href="/">Hardware</a>
+                <a href="/">Hardwares</a>
               </li>
               <li>
                 <a href="/">Raw Material</a>
               </li>
               <li>
-                <a href="/">Become Supplier</a>
+                <a href="/">Equipments</a>
               </li>
               <li>
-                <a href="/">Become  Vendor</a>
+                <a href="/">How we Work</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="signin__button">
-          <div className="">
-            <a href="/signin">
-              <button>Sign In </button>
-            </a>
-          </div>
+          <button>
+            <a href="/signin">Sign In</a>
+          </button>
         </div>
-        <div className="getQuote__btn">
-          <button className="btn">Get Quote</button>
+        <div className="signin__button__mobile">
+          <a href="/signin">
+            <HiOutlineLogin className="icon" />
+          </a>
         </div>
 
         <div className="hamburger" onClick={handleClick}>
@@ -53,7 +52,6 @@ const Header = () => {
           )}
         </div>
       </div>
-      
     </header>
   );
 };

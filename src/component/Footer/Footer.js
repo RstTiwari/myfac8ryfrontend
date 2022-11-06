@@ -48,12 +48,6 @@ function Footer() {
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
-          <div class="footer-logo">
-            <Link to="/" className="social-logo">
-              MyFac8ry
-            </Link>
-          </div>
-          <small class="website-rights"> MyFac8ry © 2022</small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
@@ -96,6 +90,12 @@ function Footer() {
               <i class="fab fa-linkedin" />
             </Link>
           </div>
+          <div class="footer-logo">
+            <Link to="/" className="social-logo">
+              MyFac8ry
+            </Link>
+          </div>
+          <small class="website-rights"> MyFac8ry © 2022</small>
         </div>
       </section>
     </div>
