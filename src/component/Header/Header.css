@@ -43,47 +43,23 @@ header {
 }
 .navbar .signin__button {
     display: flex;
-    flex: 10%;
+    flex: 20%;
     align-items: center;
 }
 .signin__button button {
-    padding: 10px 24px;
-    border: 2px solid #0087ee;
+    padding:10px 24px;
+     border: 2px solid #0087ee;
     border-radius: 5px;
-    background-color :#fff ;
     -webkit-transition: opacity .2s,color .2s,border-color .2s,background-color .2s;
     transition: opacity .2s,color .2s,border-color .2s,background-color .2s;
-    color:    #0087ee;
-    font-weight: 500;
     text-align: center;
+    font-weight: 900;
+    background-color: transparent;  
+    color: #0087ee;
 
 }
- .navbar .getQuote__btn {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 15px;
-    flex: 15%;
-    align-items: center;
-    text-align: center;
-}
-.getQuote__btn button {
-      border: none;
-    color: #fff;
-    min-width: auto;
-    display: inline-block;
-    transition: all 0.4s;
-    padding: 14px 40px;
-    line-height: 27px;
-    background: #0e6aed;
-    height: 46px;
-    border-radius: 4px;
-    position: relative;
-    cursor: pointer;
-    vertical-align: middle;
-    border: 1px solid #0e6aed;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
+.signin__button__mobile{
+    display: none;
 }
 
 .navbar li {
@@ -130,7 +106,27 @@ header {
     .navbar .nav-menu li a {
         font-size: 1rem;
     }
-     .navbar .getQuote__btn  ,  .navbar .signin__button{
+    .navbar .signin__button{
+    color: #0087ee;
+    font-weight: 700;
+    text-align: center;
+    }
+    .signin__button button{
+        display: none;
+    }
+    .signin__button__mobile{
+    flex: 40%;
+    display: block;
+    padding: 10px 15px !important;
+    margin-right: 30px;
+    font-size: 10px;
+    text-align: center;
+    background-color: transparent;  
+    color: #0087ee;
+
+}
+
+     .navbar .getQuote__btn  {
         display: none;
     }
 }
