@@ -14,7 +14,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route path="/" element={<Home />} onEnter={requireAuth} />
+            <Route path="/" element={<Home />} />
             <Route
               path="/signin"
               element={
