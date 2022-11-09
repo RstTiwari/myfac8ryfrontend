@@ -15,13 +15,13 @@ const Hero = () => {
               <div className="row">
                 <div className="hero_homepage">
                   <div className="hero__landingheader">
-                    <h1> On Demand Industrial Services</h1>
+                    <h1>On Demand <span id="spin"></span></h1>
                   </div>
                   <div className="hero__landingtext">
                     <div className="hero__landingtext__subheadline">
                       With over 200 manufacturers , suppliers in Vasai, our
                       network has the capacity you need for prototyping,
-                      production and mass production.
+                      production,Industrail Hardwares and Raw material.
                     </div>
                     <div className="hero__landingtext__symbol">
                       <div className="hero__landingtext__symbol1">

@@ -22,7 +22,8 @@ const Signin = () => {
           if (response.data.success === 0) {
             alert(`${response.data.message}`);
           } else {
-            console.log("response", response);
+            localStorage.setItem("token", response.data.token)
+            localStorage.setItem("user", response.data.user.companyName);
             navigate("/");
           }
 

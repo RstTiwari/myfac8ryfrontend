@@ -41,9 +41,13 @@ header {
      list-style-type: none;
 
 }
+.how__we__diffrent{
+    background-color: #c3c0f7;
+    color: black;
+}
 .navbar .signin__button {
     display: flex;
-    flex: 20%;
+    flex: 10%;
     align-items: center;
 }
 .signin__button button {
@@ -57,6 +61,11 @@ header {
     background-color: transparent;  
     color: #0087ee;
 
+}
+.after__signin{
+      color: #0087ee;
+      display: flex;
+      align-items: center;
 }
 .signin__button__mobile{
     display: none;
@@ -124,6 +133,13 @@ header {
     background-color: transparent;  
     color: #0087ee;
 
+}
+.after__signin{
+      color: #0087ee;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px !important;
+      margin-right: 30px;
 }
 
      .navbar .getQuote__btn  {
