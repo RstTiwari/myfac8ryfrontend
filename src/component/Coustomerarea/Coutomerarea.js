@@ -1,15 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect,useState } from 'react'
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { BiLock } from "react-icons/bi";
+import { useNavigate } from 'react-router-dom';
 
 import "../Coustomerarea/Coustomerarea.css"
+import isAuthenticated from "../../Helper/auth";
 
 const Coutomerarea = () => {
+  const navigate  = useNavigate()
   const [selectFile ,setSelectFile] = useState()
   const handleSubmit = (e)=>{
     setSelectFile(selectFile)
     console.log(selectFile);
   }
+  const checkLoggedIn = async () => {
+    let response = await isAuthenticated();
+    if (response) {
+      return;
+    }
+    navigate("/signin")
+    alert("Please Login to get Quote");
+  };
+
+  useEffect(() => {
+    checkLoggedIn();
+  }); 
   return (
     <div className="coustmerarea">
       <div className="coustmerarea__container">
