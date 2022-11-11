@@ -22,9 +22,10 @@ const Signin = () => {
           if (response.data.success === 0) {
             alert(`${response.data.message}`);
           } else {
+            navigate("/");
             localStorage.setItem("token", response.data.token)
             localStorage.setItem("user", response.data.user.companyName);
-            navigate("/");
+            
           }
 
     }
