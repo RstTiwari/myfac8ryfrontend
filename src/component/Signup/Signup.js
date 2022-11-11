@@ -22,7 +22,7 @@ const handleSubmit = async (event) => {
   }else{
     setsignup(signup);
     let response = await axios.post(
-      "https://myfac8ryapi.vercel.app/api/signup",
+      "https://myfac8ryapistage.vercel.app/api/signup",
       signup
     );
     if (response.data.success === 0) {
