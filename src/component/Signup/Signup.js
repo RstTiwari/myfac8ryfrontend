@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
-
 import "../Signup/Signup.css"
+
+let dev = false;
+let url = "https://myfac8ryapi.vercel.app/api/";
+if (dev) {
+  url = "http://localhost:4000/api/";
+}
 
 const Signup = () => {
   const [signup , setsignup]  = useState({
@@ -22,7 +27,7 @@ const handleSubmit = async (event) => {
   }else{
     setsignup(signup);
     let response = await axios.post(
-      "https://myfac8ryapi.vercel.app/api/signup",
+      `${url}signup`,
       signup
     );
     if (response.data.success === 0) {
