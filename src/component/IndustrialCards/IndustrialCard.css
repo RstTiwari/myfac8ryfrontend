@@ -34,10 +34,7 @@
     background-color: #fff;
     transition: all 0.2s;
 }
-.row .card__header:hover{
-    filter: brightness(100%);
-    transform: scale(1.1);
-}
+
 
 .row .card__header__title {
     font-size: 20px;
