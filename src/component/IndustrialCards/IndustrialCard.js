@@ -19,12 +19,12 @@ const IndustrialCard = () => {
             </div>
             <div className="industrial__card__mobile">
               <div className="card__header">
+                <div className="card__header__title">CNC/Lathe Machining</div>
                 <img
                   className="card__header__icon"
                   alt="industryicon"
                   src={require("../../Assets/CNC_LATH_MACHINING.jpg")}
                 />
-                <div className="card__header__title">CNC Machining</div>
               </div>
             </div>
             <div className="industrial__card__desktop">
@@ -41,59 +41,63 @@ const IndustrialCard = () => {
             </div>
             <div className="industrial__card__mobile">
               <div className="card__header">
+                <div className="card__header__title">
+                  Sheet Metal Fabrication
+                </div>
                 <img
                   className="card__header__icon"
                   alt="industryicon"
                   src={require("../../Assets/myFac8ry__sheetmetal__fabrication.jpeg")}
                 />
+              </div>
+            </div>
+            <div className="industrial__card__desktop">
+              <div className="card__header">
+                <div className="card__header__title">Injection Molding</div>
+                <img
+                  className="card__header__icon"
+                  alt="industryicon"
+                  src={require("../../Assets/myFac8ry__injectionMolding.jpg")}
+                />
+              </div>
+            </div>
+            <div className="industrial__card__mobile">
+              <div className="card__header">
+                <div className="card__header__title">Injection Molding</div>
+
+                <img
+                  className="card__header__icon"
+                  alt="industryicon"
+                  src={require("../../Assets/myFac8ry__injectionMolding.jpg")}
+                />
+              </div>
+            </div>
+            <div className="industrial__card__desktop">
+              <div className="card__header">
+                <div className="card__header__title">3D Printing</div>
+                <img
+                  className="card__header__icon"
+                  alt="industryicon"
+                  src={require("../../Assets/myFac8ry__lathe__3dprinting.jpeg")}
+                />
+              </div>
+            </div>
+            <div className="industrial__card__mobile">
+              <div className="card__header">
+                <div className="card__header__title">3D Printing</div>
+
+                <img
+                  className="card__header__icon"
+                  alt="industryicon"
+                  src={require("../../Assets/myFac8ry__lathe__3dprinting.jpeg")}
+                />
+              </div>
+            </div>
+            <div className="industrial__card__desktop">
+              <div className="card__header">
                 <div className="card__header__title">
-                  Sheet Metal Fabrication
+                  Custom Fabrication
                 </div>
-              </div>
-            </div>
-            <div className="industrial__card__desktop">
-              <div className="card__header">
-                <div className="card__header__title">Injection Molding</div>
-                <img
-                  className="card__header__icon"
-                  alt="industryicon"
-                  src={require("../../Assets/myFac8ry__injectionMolding.jpg")}
-                />
-              </div>
-            </div>
-            <div className="industrial__card__mobile">
-              <div className="card__header">
-                <img
-                  className="card__header__icon"
-                  alt="industryicon"
-                  src={require("../../Assets/myFac8ry__injectionMolding.jpg")}
-                />
-                <div className="card__header__title">Injection Molding</div>
-              </div>
-            </div>
-            <div className="industrial__card__desktop">
-              <div className="card__header">
-                <div className="card__header__title">3D Printing</div>
-                <img
-                  className="card__header__icon"
-                  alt="industryicon"
-                  src={require("../../Assets/myFac8ry__lathe__3dprinting.jpeg")}
-                />
-              </div>
-            </div>
-            <div className="industrial__card__mobile">
-              <div className="card__header">
-                <img
-                  className="card__header__icon"
-                  alt="industryicon"
-                  src={require("../../Assets/myFac8ry__lathe__3dprinting.jpeg")}
-                />
-                <div className="card__header__title">3D Printing</div>
-              </div>
-            </div>
-            <div className="industrial__card__desktop">
-              <div className="card__header">
-                <div className="card__header__title"> Fabrication</div>
                 <img
                   className="card__header__icon"
                   alt="industryicon"
@@ -103,12 +107,14 @@ const IndustrialCard = () => {
             </div>
             <div className="industrial__card__mobile">
               <div className="card__header">
+                <div className="card__header__title">
+                  Custom Fabrication
+                </div>
                 <img
                   className="card__header__icon"
                   alt="industryicon"
                   src={require("../../Assets/myFac8ry__fabrication.jpeg")}
                 />
-                <div className="card__header__title">Fabrication</div>
               </div>
             </div>
           </div>
