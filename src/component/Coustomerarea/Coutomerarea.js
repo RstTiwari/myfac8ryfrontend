@@ -44,7 +44,7 @@ const Coutomerarea = () => {
             />
           </div>
           <div className="coustmerarea__title">
-            <h2>Upload your models</h2>
+            <h2>Upload your models/Files</h2>
             <div className="coustmerarea__title1">
               <p>
                 Uploading CADs is the best way to get an instant quote
@@ -55,13 +55,13 @@ const Coutomerarea = () => {
             </div>
 
             <input
-            className='coustmer__input'
-            onChange={(e)=>{
-              setSelectFile(e.target.files[0])
-            }}
-            type={"file"}
+              className="coustmer__input"
+              onChange={(e) => {
+                setSelectFile(e.target.files[0]);
+              }}
+              type={"file"}
             />
-            <button onClick={handleSubmit}>Upload a Model!</button>
+            <button onClick={handleSubmit}>Upload a Model/File </button>
 
             <div className="coustmerarea__title2">
               <p>

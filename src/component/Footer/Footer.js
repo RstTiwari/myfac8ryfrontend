@@ -19,7 +19,7 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How We works</Link>
+            <Link to="/">How we're diffrent</Link>
             <Link to="/">Careers</Link>
             <Link to="/">Capabilities</Link>
             <Link to="/">Terms of Service</Link>
