@@ -32,14 +32,17 @@ const Header = () => {
         <div className="container">
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li>
-                <a href="/">Hardwares</a>
+            <li>
+                <a href="/">Industrial Manufacturing</a>
               </li>
               <li>
-                <a href="/">Raw Material</a>
+                <a href="/">Industrial Hardwares</a>
               </li>
               <li>
-                <a href="/">Equipments</a>
+                <a href="/">Industrial Raw Material</a>
+              </li>
+              <li>
+                <a href="/">Industrial Softwares</a>
               </li>
               <li className="how__we__diffrent">
                 <a href="/">How we're diffrent</a>
