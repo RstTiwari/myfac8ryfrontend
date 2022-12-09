@@ -51,10 +51,11 @@
 }
 .industrial__other_services{
     position: relative;
-    margin-top: 400px;
+    margin-top: 350px;
 }
 
 .other_services_row{
+    padding: 3vw;
     display: grid;
     grid-template-columns: auto auto  auto auto  ;
     
@@ -93,7 +94,7 @@
     display: none;
 }
 
-@media screen and (max-width:940px) {
+@media screen and (max-width:1000px) {
     .row .industrial__card__desktop{
         display: none;
     }
@@ -134,7 +135,7 @@
   max-width: 100%;
 }
 .industrial__other_services{
-    margin-top: 450px;
+    margin-top: 465px;
 }
 .other_services_row .card__header__title{
     font-size: 5vw;
