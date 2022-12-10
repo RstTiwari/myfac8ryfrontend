@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from "axios"
 import "./Signin.css"
 let dev = false;
-let url = "https://myfac8ryapistage.vercel.app/api/";
+let url = "https://myfac8ryapi.vercel.app/api/";
 if(dev){
   url = "http://localhost:4000/api/";
 }
