@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import "../Coustomerarea/Coustomerarea.css"
 import isAuthenticated from "../../Helper/auth";
 import axios from 'axios';
+import Loader from "../../Helper/Loader"
 
 let dev = true;
 let url = "https://myfac8ryapi.vercel.app/api/";
@@ -16,22 +17,38 @@ if (dev) {
 const Coutomerarea =  () => {
   const navigate  = useNavigate()
   const [enquiryFile, setEnquiryFile] = useState(null);
+  const [ loader , setLoader]   = useState(false)
 
 
 
-  const handleSubmit = async (e) => {
+  const handelEnquiry = async (e) => {
     e.preventDefault()
-    const formData =  new FormData()
-    formData.append("enquiryFile", enquiryFile);
-    const config = {
-      method: "post",
-      url: `${url}/sendfile`,
-      headers: { "Contetnt-Type": "multipart/form-data" },
-      data: formData,
-    };
+    if(enquiryFile.length < 1){
+      alert("Please Select file")
+    }else{
+      setLoader(true)
+      const formData =  new FormData()
+      formData.append("enquiryFile", enquiryFile);
+      const config = {
+        method: "post",
+        url: `${url}/sendfile`,
+        headers: { "Contetnt-Type": "multipart/form-data" },
+        data: formData,
+      };
+      let data = await axios(config)
+      if(data.success = 1){
+        setLoader(false)
+        alert("File uploaded , Our team will contact you")
+        navigate("/")
+      }else{
+        setLoader(false)
+        alert(`File upload failed ${data.message}`)
+      }
 
-    let data = await axios(config)
+    }
+
   };
+
     const handleFileChange = (e) => {
       const data = e.target.files[0];
       setEnquiryFile(data);
@@ -49,7 +66,8 @@ const Coutomerarea =  () => {
     checkLoggedIn();
   }); 
   return (
-    <div className="coustmerarea">
+    <div>
+      {loader === true? (<Loader />): (  <div className="coustmerarea">
       <div className="coustmerarea__container">
         <div className="coustmerarea_row">
           <div className="coustmerarea__images">
@@ -76,7 +94,7 @@ const Coutomerarea =  () => {
                 </span>
               </p>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handelEnquiry}>
               <input
                 className="coustmer__input"
                 onChange= {handleFileChange}
@@ -95,7 +113,10 @@ const Coutomerarea =  () => {
           </div>
         </div>
       </div>
+    </div>)}
+  
     </div>
+ 
   );
 }
 

@@ -36,11 +36,12 @@ h2{
     display: flex;
 }
 .turbocharge__details1{
-    padding: 30px;
+    padding: 10px 80px;
     display: flex;
     max-width: 33.333333%;
     flex-direction: column;
 }
+
 
 
 .turbocharge__details__text{

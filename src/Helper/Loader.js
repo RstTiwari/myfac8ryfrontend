@@ -3,32 +3,16 @@ import   "./Loader.css"
 
 const Loader = () => {
   return (
-    <div className="boxes">
-    <div className="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <body>
+    <div class="circle"></div>
+    <div class="container">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
     </div>
-    <div className="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div className="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div className="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
+  </body>
+
+
   );
 };
 
