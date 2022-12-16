@@ -20,23 +20,24 @@ function Footer() {
           <div class="footer-link-items">
             <h2>About Us</h2>
             <Link to="/">How we're diffrent</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Capabilities</Link>
             <Link to="/">Terms of Service</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/">Contact</Link>
-            <Link to="/">Become Vendor </Link>
-            <Link to="/">Become Supplier</Link>
+            <Link to="/signup">Become Vendor </Link>
+            <Link to="/signup">Become Supplier</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Our Services</h2>
-            <Link to="/">Hardware</Link>
-            <Link to="/">Raw Material</Link>
-            <Link to="/">Manufacturing</Link>
+            <Link to="/"> Industrial Manufacturing</Link>
+            <Link to="/">Iundustrial Hardware</Link>
+            <Link to="/">Industrial Raw Material</Link>
+            <Link to="/">Industrial Softwares</Link>
+
+           
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>

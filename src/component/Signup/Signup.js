@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import "../Signup/Signup.css"
+import Loader from "../../Helper/Loader"
 
 let dev = false;
 let url = "https://myfac8ryapi.vercel.app/api/";
@@ -18,6 +19,8 @@ const Signup = () => {
     password :""
 
 })
+
+const [ loader , setLoader]   = useState(false)
 const navigate = useNavigate()
 
 const handleSubmit = async (event) => {
@@ -25,14 +28,17 @@ const handleSubmit = async (event) => {
   if (!signup.companyName || !signup.email || !signup.name || !signup.number){
     alert("please fill all details")
   }else{
+    setLoader(true)
     setsignup(signup);
     let response = await axios.post(
       `${url}signup`,
       signup
     );
     if (response.data.success === 0) {
+      setLoader(false)
       alert(`${response.data.message}`);
     } else {
+      setLoader(false)
       navigate("/signin");
       alert(`${response.data.message}`);
     }
@@ -44,7 +50,7 @@ const handleSubmit = async (event) => {
   return (
     <div>
       <>
-        <div className="parent clearfix">
+      {loader === true ? (<Loader />):(        <div className="parent clearfix">
           <div className="bg-illustration">
             <div className="burger-btn">
               <span></span>
@@ -113,7 +119,8 @@ const handleSubmit = async (event) => {
               </div>
             </div>
           </div>
-        </div>
+        </div>)}
+
       </>
     </div>
   );

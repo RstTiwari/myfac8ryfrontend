@@ -11,7 +11,7 @@ const Turbocharge = () => {
     <section className="turbocharge">
       <div className="turbocharge__container">
         <div className="turbocharge__title">
-          <h2>Turbocharge the way your Industrail Needs</h2>
+          <h2>TURBOCHARGE YOUR INDUSTRIAL NEEDS</h2>
         </div>
         <div className="turbocharge__row">
           <div className="turbocharge__details1">
@@ -58,7 +58,7 @@ const Turbocharge = () => {
           <div className="turbocharge__details1">
             <div className="turbocharge__details__text">
               <img alt={"newtworkcapacity"} src={uploadfile} />
-              <h3>Upload your CAD files</h3>
+              <h3>Upload your  files</h3>
               <p>
                 To get your instant quote, just upload your files and select
                 your production process and material.

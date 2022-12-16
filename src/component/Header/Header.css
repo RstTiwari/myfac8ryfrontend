@@ -19,7 +19,7 @@ header {
 }
 
 .navbar .container__logo{
-    font-size: 35px;
+    font-size: 2.9vw;
     flex: 5%;
     margin-left: 35px;
 }
@@ -44,6 +44,7 @@ header {
 .how__we__diffrent{
     background-color: #c3c0f7;
     color: black;
+    margin-right: 20px;
 }
 .navbar .signin__button {
     display: flex;
@@ -51,7 +52,7 @@ header {
     align-items: center;
 }
 .signin__button button {
-    padding:10px 24px;
+    padding:10px 15px;
      border: 2px solid #0087ee;
     border-radius: 5px;
     -webkit-transition: opacity .2s,color .2s,border-color .2s,background-color .2s;
@@ -83,7 +84,7 @@ header {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width:940px) {
+@media screen and (max-width:1040px) {
     .hamburger {
         display: block;
         margin-right: 20px;

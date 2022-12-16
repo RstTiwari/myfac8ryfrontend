@@ -5,7 +5,7 @@ const IndustrialCard = () => {
   return (
     <>
       <section className="industrial__card">
-        <div className="row">
+        {/* <div className="row">
           <div className="continer__row">
             <div className="industrial__card__desktop">
               <div className="card__header">
@@ -118,34 +118,46 @@ const IndustrialCard = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="industrial__other_services">
           <div className="other_services_container">
             <div className="other_services_row">
               <div className="card__header">
-                <div className="card__header__title">Hardwares</div>
+                
                 <img
                   className="card__header__icon"
                   alt="industryicon"
-                  src={require("../../Assets/hardwares.jpg")}
+                  src={require("../../Assets/indutrailManufacturing.jpg")}
                 />
+                <div className="card__header__title">Industrial Manufacturing</div>
               </div>
               <div className="card__header">
-                <div className="card__header__title">Raw Material</div>
                 <img
                   className="card__header__icon"
                   alt="industryicon"
-                  src={require("../../Assets/rawmaterial.jpg")}
+                  src={require("../../Assets/indutrailHardwares.jpg")}
                 />
+                <div className="card__header__title"> Industrial Hardwares</div>
+
               </div>
               <div className="card__header">
-                <div className="card__header__title">Equipments</div>
                 <img
                   className="card__header__icon"
                   alt="industryicon"
-                  src={require("../../Assets/eqiupment.jpg")}
+                  src={require("../../Assets/indutrailRawMaterail.jpg")}
                 />
+                <div className="card__header__title">Industrial Raw Material</div>
+
+              </div>
+              <div className="card__header">
+                <img
+                  className="card__header__icon"
+                  alt="industryicon"
+                  src={require("../../Assets/indutrailSoftware.jpg")}
+                />
+                <div className="card__header__title">Industrial Softwares</div>
+
               </div>
             </div>
           </div>

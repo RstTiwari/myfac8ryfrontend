@@ -13,7 +13,7 @@ const Orderprocess = () => {
               </svg>
               <span class="ProgressBar-stepLabel">
                 instant quote
-                <p>Upload your CAD to our online quoting platform</p>
+                <p>Upload your File to our online quoting platform</p>
               </span>
             </li>
             <li class="ProgressBar-step">
