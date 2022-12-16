@@ -5,14 +5,37 @@ import { useNavigate } from 'react-router-dom';
 
 import "../Coustomerarea/Coustomerarea.css"
 import isAuthenticated from "../../Helper/auth";
+import axios from 'axios';
 
-const Coutomerarea = () => {
+let dev = true;
+let url = "https://myfac8ryapi.vercel.app/api/";
+if (dev) {
+  url = "http://localhost:4000/api/";
+}
+
+const Coutomerarea =  () => {
   const navigate  = useNavigate()
-  const [selectFile ,setSelectFile] = useState()
-  const handleSubmit = (e)=>{
-    setSelectFile(selectFile)
-    console.log(selectFile);
-  }
+  const [enquiryFile, setEnquiryFile] = useState(null);
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const formData =  new FormData()
+    formData.append("enquiryFile", enquiryFile);
+    const config = {
+      method: "post",
+      url: `${url}/sendfile`,
+      headers: { "Contetnt-Type": "multipart/form-data" },
+      data: formData,
+    };
+
+    let data = await axios(config)
+  };
+    const handleFileChange = (e) => {
+      const data = e.target.files[0];
+      setEnquiryFile(data);
+    };
   const checkLoggedIn = async () => {
     let response = await isAuthenticated();
     if (response) {
@@ -47,21 +70,21 @@ const Coutomerarea = () => {
             <h2>Upload your models/Files</h2>
             <div className="coustmerarea__title1">
               <p>
-                Uploading CADs is the best way to get an instant quote
+                Uploading PDF is the best way to get an instant quote
                 <span>
                   <AiOutlineExclamationCircle />
                 </span>
               </p>
             </div>
-
-            <input
-              className="coustmer__input"
-              onChange={(e) => {
-                setSelectFile(e.target.files[0]);
-              }}
-              type={"file"}
-            />
-            <button onClick={handleSubmit}>Upload a Model/File </button>
+            <form onSubmit={handleSubmit}>
+              <input
+                className="coustmer__input"
+                onChange= {handleFileChange}
+                name = "file"
+                type="file"
+              />
+              <button type="submit">Upload a Model/File </button>
+            </form>
 
             <div className="coustmerarea__title2">
               <p>

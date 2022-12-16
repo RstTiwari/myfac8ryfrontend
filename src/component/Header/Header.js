@@ -33,16 +33,16 @@ const Header = () => {
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
-                <a href="/">Industrial Manufacturing</a>
+                <a href="/"> Manufacturing</a>
               </li>
               <li>
-                <a href="/">Industrial Hardwares</a>
+                <a href="/"> Hardwares</a>
               </li>
               <li>
-                <a href="/">Industrial Raw Material</a>
+                <a href="/"> Raw Material</a>
               </li>
               <li>
-                <a href="/">Industrial Softwares</a>
+                <a href="/"> Softwares</a>
               </li>
               <li className="how__we__diffrent">
                 <a href="/">How we're diffrent</a>
@@ -53,7 +53,7 @@ const Header = () => {
         <div className="signin__button">
           {companyName ? (
             <div className="after__signin">
-              {companyName}
+              {companyName.slice(0,4)}
               <HiOutlineUserCircle className="icon" />
             </div>
           ) : (
