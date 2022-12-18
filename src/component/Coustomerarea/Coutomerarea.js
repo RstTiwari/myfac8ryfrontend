@@ -8,7 +8,7 @@ import isAuthenticated from "../../Helper/auth";
 import axios from 'axios';
 import Loader from "../../Helper/Loader"
 
-let dev = true;
+let dev = false;
 let url = "https://myfac8ryapi.vercel.app/api/";
 if (dev) {
   url = "http://localhost:4000/api/";
@@ -31,7 +31,7 @@ const Coutomerarea =  () => {
       formData.append("enquiryFile", enquiryFile);
       const config = {
         method: "post",
-        url: `${url}/sendfile`,
+        url: `${url}sendfile`,
         headers: { "Contetnt-Type": "multipart/form-data" },
         data: formData,
       };
