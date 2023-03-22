@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <div className="container">
           <div className="navmenu__item">
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
+            {/* <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
                 <a href="/"> Manufacturing</a>
               </li>
@@ -47,7 +47,7 @@ const Header = () => {
               <li className="how__we__diffrent">
                 <a href="/">How we're diffrent</a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="signin__button">
@@ -70,13 +70,13 @@ const Header = () => {
           )}
         </div>
 
-        <div className="hamburger" onClick={handleClick}>
+        {/* <div className="hamburger" onClick={handleClick}>
           {click ? (
             <HiOutlineX className="icon" />
           ) : (
             <HiMenu className="icon" />
           )}
-        </div>
+        </div> */}
       </div>
     </header>
   );
