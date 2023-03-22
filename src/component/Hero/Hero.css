@@ -1,8 +1,15 @@
+
 .hero_content {
     height: 100%;
     width: 100%;
     position: relative;
 
+}
+
+.home_container {
+        width: 100vh;
+        height: 100vh;
+        background: "#ffffff",
 }
 .hero_container{
     height: 100vh;
