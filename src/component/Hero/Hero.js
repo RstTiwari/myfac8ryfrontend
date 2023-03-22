@@ -1,67 +1,99 @@
 import React from 'react'
-import { FaCalendarCheck } from "react-icons/fa";
-import {IoShieldCheckmarkOutline} from "react-icons/io5"
-import {BiLock} from "react-icons/bi"
+// import { FaCalendarCheck } from "react-icons/fa";
+// import {IoShieldCheckmarkOutline} from "react-icons/io5"
+// import {BiLock} from "react-icons/bi"
 import "./Hero.css"
+import team from "../../Assets/team.jpg"
 import "../IndustrialCards/IndustrialCard.css";
 
 const Hero = () => {
   return (
-    <main className="hero_content">
-      <section>
-        <div className="hero_container">
-          <section className="hero_container__section">
-            <div className="hero_container__section1">
-              <div className="row">
-                <div className="hero_homepage">
-                  <div className="hero__landingheader">
-                    <h1>On Demand <span id="spin"></span></h1>
-                  </div>
-                  <div className="hero__landingtext">
-                    <div className="hero__landingtext__subheadline">
-                      With over 200 manufacturers , suppliers in Vasai, our
-                      network has the capacity you need for prototyping,
-                      production,Industrail Hardwares and Raw material.
-                    </div>
-                    <div className="hero__landingtext__symbol">
-                      <div className="hero__landingtext__symbol1">
-                        <div className="hero__landingtext__symbol__time">
-                          <FaCalendarCheck className="fa_calender" />
-                        </div>
-                        <div className="hero__landingtext__symbol__text">
-                          Parts in as Fast as 3 Days
-                        </div>
-                      </div>
-                      <div className="hero__landingtext__symbol2">
-                        <div className="hero__landingtext__symbol__quality">
-                          <IoShieldCheckmarkOutline className="fa_shield" />
-                        </div>
-                        <div className="hero__landingtext__symbol__text">
-                          Strong QA
-                          <br />
-                          ISO 9001 Certified
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="hero__landing__logo">
-                    <a href="/customerarea" className="instant__quote__button">
-                      Get Your Instant Quote
-                    </a>
-                  </div>
-                  <div>
-                    <p className="secure__lock">
-                      <BiLock className="fa__lock" />
-                      All uploads are secure and confidential.
-                    </p>
-                  </div>
-                </div>
-              </div>
+    // <main className="hero_content">
+    //   <section>
+    //     <div className="hero_container">
+    //       <section className="hero_container__section">
+    //         <div className="hero_container__section1">
+    //           <div className="row">
+    //             <div className="hero_homepage">
+    //               {/* <div className="hero__landingheader">
+    //                 <h1>
+    //                   On Demand <span id="spin"></span>
+    //                 </h1>
+    //               </div> */}
+    //               {/* <div className="hero__landingtext">
+    //                 <div className="hero__landingtext__subheadline">
+    //                   With over 200 manufacturers , suppliers in Vasai, our
+    //                   network has the capacity you need for prototyping,
+    //                   production,Industrail Hardwares and Raw material.
+    //                 </div>
+    //                 <div className="hero__landingtext__symbol">
+    //                   <div className="hero__landingtext__symbol1">
+    //                     <div className="hero__landingtext__symbol__time">
+    //                       <FaCalendarCheck className="fa_calender" />
+    //                     </div>
+    //                     <div className="hero__landingtext__symbol__text">
+    //                       Parts in as Fast as 3 Days
+    //                     </div>
+    //                   </div>
+    //                   <div className="hero__landingtext__symbol2">
+    //                     <div className="hero__landingtext__symbol__quality">
+    //                       <IoShieldCheckmarkOutline className="fa_shield" />
+    //                     </div>
+    //                     <div className="hero__landingtext__symbol__text">
+    //                       Strong QA
+    //                       <br />
+    //                       ISO 9001 Certified
+    //                     </div>
+    //                   </div>
+    //                 </div>
+    //               </div> */}
+    //               <div className="hero__landing__logo">
+    //                 <a href="/customerarea" className="instant__quote__button">
+    //                   Get Your Instant Quote
+    //                 </a>
+    //               </div>
+    //               <div>
+    //                 <p className="secure__lock">
+    //                   <BiLock className="fa__lock" />
+    //                   All uploads are secure and confidential.
+    //                 </p>
+    //               </div>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </section>
+    //     </div>
+    //   </section>
+    // </main>
+    <div className="home">
+      <div className="carouselDiv">
+        <div className="aieffectDiv">
+          <h1 className="aitext">
+            {" "}
+            AI Powered Softwares to Manage your Team Like Never Before
+          </h1>
+          <p>
+            With our AI solution softwares , manage your team at one place
+            Assign Work track Record ,{" "}
+            <span>MyFac8ry AI Solutions help u in </span> ,
+            <span> Accounts,</span>
+            <span> Inventory,</span>
+            <span> Design ,</span>
+            <span> Quality </span>
+          </p>
+          <div className="quotation_button">
+            <div className="hero__landing__logo">
+              <a href="/feetrailPage" className="instant__quote__button">
+                Start Your Free Trial
+              </a>
             </div>
-          </section>
+          </div>
         </div>
-      </section>
-    </main>
+        <div className="imageDiv">
+          <img alt="assistant" src={team} />
+        </div>
+      </div>
+    </div>
   );
 }
 

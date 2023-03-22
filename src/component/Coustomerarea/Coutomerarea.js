@@ -8,7 +8,7 @@ import isAuthenticated from "../../Helper/auth";
 import axios from 'axios';
 import Loader from "../../Helper/Loader"
 
-let dev = false;
+let dev = true;
 let url = "https://myfac8ryapi.vercel.app/api/";
 if (dev) {
   url = "http://localhost:4000/api/";
