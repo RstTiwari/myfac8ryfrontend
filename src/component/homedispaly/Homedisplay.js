@@ -15,7 +15,7 @@ return (
         <div className="aieffectDiv">
           <h1 className="aitext">Let's AI Work For You</h1>
           <p>
-            You Focus on product Development, <span>MyFac8ry</span> will arrange
+            You Focus on Design and Development, <span>MyFac8ry</span> will arrange
             everything at your factory.
             <span> Part Manufactuirng,</span>
             <span> Hardwares,</span>
