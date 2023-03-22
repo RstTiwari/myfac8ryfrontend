@@ -8,7 +8,7 @@ import orderPart from "../../Assets/orderparts.svg";
 import recivepart from "../../Assets/revice parts.svg";
 const Turbocharge = () => {
   return (
-    <section className="turbocharge">
+    <div className="turbocharge">
       <div className="turbocharge__container">
         <div className="turbocharge__title">
           <h2>TURBOCHARGE YOUR INDUSTRIAL NEEDS</h2>
@@ -88,7 +88,7 @@ const Turbocharge = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

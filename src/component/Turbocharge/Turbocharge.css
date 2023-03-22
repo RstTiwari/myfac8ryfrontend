@@ -1,17 +1,15 @@
 
 .turbocharge{
-    position:relative;
-    padding: 60px 0px;
+    margin-top: 5rem;
     width: 100%;
     height: 100%;
 }
 .turbocharge__container{
     box-sizing: border-box;
     width: 100%;
-    margin-top: -70px;
 }
 .turbocharge__title{
-    padding-top: 50px;
+    padding-top: 15vh;
     text-align: center;
     font-family: 'Open Sans',sans-serif!important;
     font-weight: 400!important;
@@ -30,7 +28,6 @@ h2{
     font-weight: 100;
     margin-top: 0;
     margin-bottom: 2rem;
-    line-height: 2.5rem;
 }
 .turbocharge__row{
     display: flex;
@@ -70,8 +67,6 @@ h2{
 @media screen and (max-width:940px){
 .turbocharge__container{
     box-sizing: border-box;
-    width: 100%;
-    margin-top: -20px;
 }
 .turbocharge__container .turbocharge__row{
     display: flex;
@@ -94,7 +89,6 @@ h2{
      color: #152026;
 }
 .turbocharge__details__text h3 {
-    padding-bottom: 20px;
     transition: 0.4s all;
     cursor: pointer
 }
@@ -107,4 +101,11 @@ h2{
 }
 }
 
+@media screen  and (max-height:700) {
+    .turbocharge__container{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 250px;
+}
+}
 

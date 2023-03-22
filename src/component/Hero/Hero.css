@@ -153,7 +153,7 @@
 }
 
 /* mobilse section*/
-
+/* 
 @media screen and (max-width:940px){
 
     .hero_container{
@@ -216,4 +216,96 @@
     color: #54646e;
 }
 
+} */
+
+.home{
+        margin-top: 100vh;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background: "#ffffff";
+        align-items: center;
+        padding-bottom: 100px;
+}
+.carouselDiv{
+        display: flex;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+}
+.aieffectDiv{
+        flex:0.5;
+        padding: 2em;
+        margin-top: 10vh;
+}
+.aitext{
+        font-size: 5em;
+}
+.quotation_button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero__landing__logo{
+    align-items: center;
+    margin-top: 2em;
+}
+.secure__lock{
+    font-size: 14px;
+    font-weight: 600;
+    color: #54646e;
+
+}
+.imageDiv{
+        flex:1;
+        height:100vh;
+        width: 100vw;
+        display:"flex";
+}
+.softwareImges{ 
+      height:100%;
+      width:100%
+   }
+
+@media screen and (max-width:940px){
+.home{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+
+}
+.carouselDiv{
+       display: flex;
+       position: relative;
+       flex-direction: column;
+       text-align: center;
+       width: 100vw;
+       height: 100vh;
+}
+.aieffectDiv{
+        padding: 2em;
+        margin-top: 7vh;
+}
+.aitext{
+        font-size: 3em;
+}
+      .imageDiv{
+        height: 50vh;
+        width: 25vw;
+        display:"flex";
+     
+}
+ .softwareImges{
+         
+      width:100%
+   }
+
+}
+
+@media screen and (max-width:380px) {
+   .aitext{
+        font-size: 1.5em;
+}
 }

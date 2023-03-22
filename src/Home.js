@@ -12,10 +12,8 @@ const Home = () => {
       <>
         <Header />
         <Homedisplay />
-        {/* <Hero /> */}
-        {/* <IndustrialCard /> */}
+        <Hero />
         <Turbocharge />
-        {/* <Footer /> */}
       </>
     </div>
   );
