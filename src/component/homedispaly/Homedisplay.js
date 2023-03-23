@@ -5,6 +5,8 @@ import "../Hero/Hero.css"
 import assistant from "../../Assets/virtual-assistant.svg";
 import { BiLock } from "react-icons/bi";
 import team from "../../Assets/team.jpg";
+import aihelp from "../../Assets/aitech2.jpg";
+
 
 const Homedisplay = () => {
 
@@ -15,24 +17,23 @@ return (
         <div className="aieffectDiv">
           <h1 className="aitext">Let's AI Work For You</h1>
           <p>
-            You Focus on Design and Development, <span>MyFac8ry</span> will arrange
-            everything at your factory.
-            <span> Part Manufactuirng,</span>
+            You Focus on Design and Development, <span>MyFac8ry</span>  AI Cloud  Solution Will Take care Other From 
+            <span> Part Manufacturing</span>
             <span> Hardwares,</span>
-            <span> Raw Material</span>
+            <span>  and Raw-Material</span>
           </p>
           <div className="quotation_button">
             <div className="hero__landing__logo">
-              <a href="/customerarea" className="instant__quote__button">
-                Get Your Instant Quote
+              <a href="/" className="instant__quote__button">
+                Try Now For Free
               </a>
             </div>
-            <div>
+            {/* <div>
               <p className="secure__lock">
                 <BiLock className="fa__lock" />
                 All uploads are secure and confidential.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="imageDiv">
