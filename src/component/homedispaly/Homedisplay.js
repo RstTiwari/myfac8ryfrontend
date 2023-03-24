@@ -17,14 +17,15 @@ return (
         <div className="aieffectDiv">
           <h1 className="aitext">Let's AI Work For You</h1>
           <p>
-            You Focus on Design and Development, <span>MyFac8ry</span>  AI Cloud  Solution Will Take care Other From 
+            You Focus on Design and Development, <span>MyFac8ry</span> AI Cloud
+            Solution Will Take care Other From
             <span> Part Manufacturing</span>
             <span> Hardwares,</span>
-            <span>  and Raw-Material</span>
+            <span> and Raw-Material</span>
           </p>
           <div className="quotation_button">
             <div className="hero__landing__logo">
-              <a href="/" className="instant__quote__button">
+              <a href="/customerarea" className="instant__quote__button">
                 Try Now For Free
               </a>
             </div>

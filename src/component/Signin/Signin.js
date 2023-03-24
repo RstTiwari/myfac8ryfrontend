@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from "axios"
 import "./Signin.css"
 import Loader from "../../Helper/Loader"
-let dev = true;
-let url = "https://myfac8ryapi.vercel.app/api/";
-if(dev){
-  url = "http://localhost:4000/api/";
-}
+import { signinUser } from '../../API/userApi'
+
 const Signin = () => {
   const [login , setLogin] = useState({
     email:"",
@@ -23,10 +19,8 @@ const Signin = () => {
     }else{
           setLoader(true)
           setLogin(login);
-          let response = await axios.post(
-            `${url}signin`,
-            login
-          );
+          let response = await signinUser(login);
+          console.log("res",response)
           if (response.data.success === 0) {
             setLoader(false)
             alert(`${response.data.message}`);

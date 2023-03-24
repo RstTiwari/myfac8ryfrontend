@@ -5,14 +5,9 @@ import { useNavigate } from 'react-router-dom';
 
 import "../Coustomerarea/Coustomerarea.css"
 import isAuthenticated from "../../Helper/auth";
-import axios from 'axios';
 import Loader from "../../Helper/Loader"
+import {userEnquiry}  from "../../API/userApi"
 
-let dev = true;
-let url = "https://myfac8ryapi.vercel.app/api/";
-if (dev) {
-  url = "http://localhost:4000/api/";
-}
 
 const Coutomerarea =  () => {
   const navigate  = useNavigate()
@@ -23,26 +18,21 @@ const Coutomerarea =  () => {
 
   const handelEnquiry = async (e) => {
     e.preventDefault()
-    if(enquiryFile.length < 1){
+    if(!enquiryFile){
       alert("Please Select file")
     }else{
       setLoader(true)
       const formData =  new FormData()
       formData.append("enquiryFile", enquiryFile);
-      const config = {
-        method: "post",
-        url: `${url}sendfile`,
-        headers: { "Contetnt-Type": "multipart/form-data" },
-        data: formData,
-      };
-      let data = await axios(config)
-      if(data.success = 1){
-        setLoader(false)
-        alert("File uploaded , Our team will contact you")
-        navigate("/")
-      }else{
-        setLoader(false)
-        alert(`File upload failed ${data.message}`)
+  
+      let response = await userEnquiry(formData)
+      if ((response.success = 1)) {
+        setLoader(false);
+        alert("File uploaded , Our team will contact you");
+        navigate("/");
+      } else {
+        setLoader(false);
+        alert(`File upload failed ${response.message}`);
       }
 
     }
@@ -88,7 +78,7 @@ const Coutomerarea =  () => {
             <h2>Upload your models/Files</h2>
             <div className="coustmerarea__title1">
               <p>
-                Uploading PDF is the best way to get an instant quote
+                Uploading PDF/Excell is the best way to get an instant quote
                 <span>
                   <AiOutlineExclamationCircle />
                 </span>
