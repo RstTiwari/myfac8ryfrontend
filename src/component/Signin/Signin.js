@@ -30,6 +30,7 @@ const Signin = () => {
             navigate("/");
             localStorage.setItem("token", response.data.token)
             localStorage.setItem("user", response.data.user.companyName);
+            localStorage.setItem("number", response.data.user.number);
             
           }
 

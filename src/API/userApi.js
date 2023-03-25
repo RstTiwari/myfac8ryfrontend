@@ -40,17 +40,19 @@ export const signupUser = async (payload) => {
   }
 };
 
-export const userEnquiry = async (data)=>{
+export const userEnquiry = async (data,userId)=>{
+     console.log(data)
   try {
        const config = {
          method: "post",
          url: `${url}enquiry`,
-         headers: { "Contetnt-Type": "multipart/form-data" },
+         headers: { "Contetnt-Type": "multipart/form-data", userId },
          data: data,
        };
 
       let response = await axios(config)
-      console.log(response)
+      console.log(response);
+      return response.data
   } catch (error) {
     
   }

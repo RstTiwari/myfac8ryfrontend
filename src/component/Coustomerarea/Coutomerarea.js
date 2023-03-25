@@ -22,10 +22,11 @@ const Coutomerarea =  () => {
       alert("Please Select file")
     }else{
       setLoader(true)
+      let number = localStorage.getItem("number")
       const formData =  new FormData()
       formData.append("enquiryFile", enquiryFile);
-  
-      let response = await userEnquiry(formData)
+      console.log(formData)
+      let response = await userEnquiry(formData,number)
       if ((response.success = 1)) {
         setLoader(false);
         alert("File uploaded , Our team will contact you");
