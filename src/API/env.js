@@ -3,7 +3,7 @@ let prod = true
 export const env = ()=>{
     let url = ""
     if(prod){
-       url = "http://161.35.22.107:4000/";
+       url = "https://myfac8ryapi.vercel.app/api/";
     }else{
         url = "http://localhost:4000/";
     }
