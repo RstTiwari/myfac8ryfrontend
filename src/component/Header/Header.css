@@ -48,6 +48,8 @@ header {
 }
 .navbar .signin__button {
     display: flex;
+    cursor: pointer;
+    position: relative;
     flex: 10%;
     align-items: center;
 }
@@ -66,6 +68,7 @@ header {
 .after__signin{
       color: #0087ee;
       display: flex;
+      position: fixed;
       align-items: center;
 }
 .signin__button__mobile{

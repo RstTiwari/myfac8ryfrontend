@@ -6,20 +6,30 @@ import {
   HiOutlineUserCircle,
 } from "react-icons/hi";
 import "./Header.css";
+import {Drawer , Avatar} from "antd"
 import isAuthenticated from "../../Helper/auth";
 const Header = () => {
 
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click); 
+  const [open ,setOpen] = useState(false)
+    const logout = () => {
+      setOpen(false);
+    };
   const [companyName , setCompanyName]  = useState()
-      const checkLoggedIn = async() => {
-        let response = await isAuthenticated();
-        setCompanyName(response);
-      };
+    const showDrawer = () => {
+      setOpen(true);
+    };
+    const onClose = ()=>{
+      setOpen(false)
+    }
+  const checkLoggedIn = async() => {
+    let response = await isAuthenticated();
+    setCompanyName(response);
+  };
 
-      useEffect(() => {
-        checkLoggedIn();
-      }, []); 
+  useEffect(() => {
+    checkLoggedIn();
+  }, []); 
   return (
     <header>
       <div className="navbar">
@@ -52,9 +62,8 @@ const Header = () => {
         </div>
         <div className="signin__button">
           {companyName ? (
-            <div className="after__signin">
-              {companyName.slice(0,4)}
-              <HiOutlineUserCircle className="icon" />
+            <div className="after__signin" onClick={showDrawer}>
+              <Avatar>{companyName.slice(0, 1)}</Avatar>
             </div>
           ) : (
             <>
@@ -77,6 +86,23 @@ const Header = () => {
             <HiMenu className="icon" />
           )}
         </div> */}
+        <Drawer
+          open={open}
+          onClose={onClose}
+          width={"25vw"}
+          height={"100px"}
+          style={{
+            marginTop: "10px",
+            display: "flex",
+          }}
+        >
+          <p>
+            <Avatar
+              icon={<HiOutlineUserCircle />}
+            />{" "}
+            {companyName}
+          </p>
+        </Drawer>
       </div>
     </header>
   );
