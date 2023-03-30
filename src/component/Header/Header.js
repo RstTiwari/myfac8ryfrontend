@@ -6,14 +6,15 @@ import {
   HiOutlineUserCircle,
 } from "react-icons/hi";
 import "./Header.css";
-import {Drawer , Avatar} from "antd"
+import {Drawer , Avatar,Button} from "antd"
+import {UserOutlined,LogoutOutlined} from "@ant-design/icons"
 import isAuthenticated from "../../Helper/auth";
 const Header = () => {
 
   const [click, setClick] = useState(false);
   const [open ,setOpen] = useState(false)
     const logout = () => {
-      setOpen(false);
+      localStorage.clear()
     };
   const [companyName , setCompanyName]  = useState()
     const showDrawer = () => {
@@ -87,21 +88,37 @@ const Header = () => {
           )}
         </div> */}
         <Drawer
+          className="drawer"
           open={open}
+          width={250}
+          height={100}
+          closable={false}
           onClose={onClose}
-          width={"25vw"}
-          height={"100px"}
-          style={{
-            marginTop: "10px",
-            display: "flex",
-          }}
         >
-          <p>
-            <Avatar
-              icon={<HiOutlineUserCircle />}
-            />{" "}
-            {companyName}
-          </p>
+          <div className="company_profile">
+            <p className="profile_icon">
+              <Avatar
+                style={{
+                  backgroundColor: "#87d068",
+                }}
+                icon={<UserOutlined />}
+              />
+            </p>
+            <h3>{companyName}</h3>
+          </div>
+          <div className="company_profile">
+            <p className="profile_icon">
+              <Avatar
+                style={{
+                  backgroundColor: "#ff0000",
+                }}
+                icon={<LogoutOutlined />}
+              />
+            </p>
+            <a href="/">
+              <Button onClick ={logout}type="primary">Log Out</Button>
+            </a>
+          </div>
         </Drawer>
       </div>
     </header>
