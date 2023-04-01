@@ -6,20 +6,31 @@ import {
   HiOutlineUserCircle,
 } from "react-icons/hi";
 import "./Header.css";
+import {Drawer , Avatar,Button} from "antd"
+import {UserOutlined,LogoutOutlined} from "@ant-design/icons"
 import isAuthenticated from "../../Helper/auth";
 const Header = () => {
 
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click); 
+  const [open ,setOpen] = useState(false)
+    const logout = () => {
+      localStorage.clear()
+    };
   const [companyName , setCompanyName]  = useState()
-      const checkLoggedIn = async() => {
-        let response = await isAuthenticated();
-        setCompanyName(response);
-      };
+    const showDrawer = () => {
+      setOpen(true);
+    };
+    const onClose = ()=>{
+      setOpen(false)
+    }
+  const checkLoggedIn = async() => {
+    let response = await isAuthenticated();
+    setCompanyName(response);
+  };
 
-      useEffect(() => {
-        checkLoggedIn();
-      }, []); 
+  useEffect(() => {
+    checkLoggedIn();
+  }, []); 
   return (
     <header>
       <div className="navbar">
@@ -52,9 +63,8 @@ const Header = () => {
         </div>
         <div className="signin__button">
           {companyName ? (
-            <div className="after__signin">
-              {companyName.slice(0,4)}
-              <HiOutlineUserCircle className="icon" />
+            <div className="after__signin" onClick={showDrawer}>
+              <Avatar>{companyName.slice(0, 1)}</Avatar>
             </div>
           ) : (
             <>
@@ -77,6 +87,39 @@ const Header = () => {
             <HiMenu className="icon" />
           )}
         </div> */}
+        <Drawer
+          className="drawer"
+          open={open}
+          width={250}
+          height={100}
+          closable={false}
+          onClose={onClose}
+        >
+          <div className="company_profile">
+            <p className="profile_icon">
+              <Avatar
+                style={{
+                  backgroundColor: "#87d068",
+                }}
+                icon={<UserOutlined />}
+              />
+            </p>
+            <h3>{companyName}</h3>
+          </div>
+          <div className="company_profile">
+            <p className="profile_icon">
+              <Avatar
+                style={{
+                  backgroundColor: "#ff0000",
+                }}
+                icon={<LogoutOutlined />}
+              />
+            </p>
+            <a href="/">
+              <Button onClick ={logout}type="primary">Log Out</Button>
+            </a>
+          </div>
+        </Drawer>
       </div>
     </header>
   );

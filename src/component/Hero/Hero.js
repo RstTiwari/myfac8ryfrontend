@@ -13,10 +13,10 @@ const Hero = () => {
     <div className="home">
       <div className="carouselDiv">
         <div className="aieffectDiv">
-          <h1 className="aitext">AI Powered Industrial Solution </h1>
+          <h1 className="aitext">AI Cloud  Industrial Solution </h1>
           <p>
             With our AI solution,Keep track of Production,Inventory Quality.
-            <span> MyFac8ry AI Powered  help u in </span> ,
+            <span> MyFac8ry AI Powered  help you in </span> ,
             <span> Increase Productivity,</span>
             <span> Decrese Inventory,</span>
             <span> Improve Quality ,</span>

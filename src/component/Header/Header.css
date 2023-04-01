@@ -48,6 +48,7 @@ header {
 }
 .navbar .signin__button {
     display: flex;
+    cursor: pointer;
     flex: 10%;
     align-items: center;
 }
@@ -64,6 +65,7 @@ header {
 
 }
 .after__signin{
+      padding:10px 15px;
       color: #0087ee;
       display: flex;
       align-items: center;
@@ -83,7 +85,17 @@ header {
 .navbar .icon {
     font-size: 1.5rem;
 }
-
+.drawer {
+    margin-top:76px;
+}
+.profile_icon {
+    padding-right: 10px;
+}
+.company_profile {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+}
 @media screen and (max-width:1040px) {
     .hamburger {
         display: block;
@@ -146,6 +158,11 @@ header {
      .navbar .getQuote__btn  {
         display: none;
     }
+
+.drawer {
+    width:  10vw;
+    margin-top:76px;
+}
 }
 
 
