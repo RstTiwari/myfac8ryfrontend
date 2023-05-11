@@ -26,7 +26,7 @@ return (
           <div className="quotation_button">
             <div className="hero__landing__logo">
               <a href="/customerarea" className="instant__quote__button">
-                GET QUOTE
+                Get Started
               </a>
             </div>
             {/* <div>

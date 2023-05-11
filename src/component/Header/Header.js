@@ -69,7 +69,7 @@ const Header = () => {
           ) : (
             <>
               <button>
-                <a href="/signin">Sign In</a>
+                <a href="/">Sign In</a>
               </button>
               <div className="signin__button__mobile">
                 <a href="/signin">
