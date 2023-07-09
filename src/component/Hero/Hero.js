@@ -15,13 +15,13 @@ const Hero = () => {
               <div className="row">
                 <div className="hero_homepage">
                   <div className="hero__landingheader">
-                    <h1>On Demand <span id="spin"></span></h1>
+                    <h1>The Digital Manufacturing Platform</h1>
                   </div>
                   <div className="hero__landingtext">
                     <div className="hero__landingtext__subheadline">
-                      With over 200 manufacturers , suppliers in Vasai, our
+                      With over 200 manufacturers , suppliers in India, our
                       network has the capacity you need for prototyping,
-                      production,Industrail Hardwares and Raw material.
+                      production,and Mass Production.
                     </div>
                     <div className="hero__landingtext__symbol">
                       <div className="hero__landingtext__symbol1">

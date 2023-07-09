@@ -1,8 +1,8 @@
 
 .turbocharge{
-    position:relative;
     padding: 60px 0px;
     width: 100%;
+
 }
 .turbocharge__container{
     box-sizing: border-box;
@@ -64,11 +64,26 @@ h2{
     text-align: center;
 }
 
+@media screen and (max-width:1200px){
+.turbocharge__container{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 3000px;
+}
+}
+@media screen and (max-width:680px){
+.turbocharge__container{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2300px;
+}
+}
+
 @media screen and (max-width:940px){
 .turbocharge__container{
     box-sizing: border-box;
     width: 100%;
-    margin-top: 330vh;
+    margin-top: 2550px;
 }
 .turbocharge__container .turbocharge__row{
     display: flex;
