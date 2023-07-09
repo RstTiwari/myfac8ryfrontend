@@ -9,29 +9,24 @@
 }
 .industrial__card .row {
     position: absolute;
-    height: 100vh;
     background-color:transparent;
-    margin-top:380px;
+    margin-top:58vh;
 }
 
 .row .continer__row{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;   
+    
 }
 .row .industrial__card__desktop{
-     flex: 1 0 0 21%;
-    align-items: center;
-    padding: 20px;
-
+    flex: 1 0 0 21%;
+    margin: 2vw;
+    height: 20vh;
 }
 
 .row .card__header{
-    text-align: center;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    background-color: #fff;
     transition: all 0.2s;
 }
 
@@ -40,14 +35,25 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 22px;
+    height: 10vh;
+    background-color: #fff;
     color: #0a304e;
     text-align: center;
     padding: 10px 0px 10px 0px;
 }
  .row .industrial__card__desktop .card__header__icon{
-    width: 210px;
+    width: 100%;
     height: 200px;
-    border-radius: 10px;
+    text-align: center;
+}
+.row .industrial__card__desktop .card__header__bottom{
+     font-size: 20px;
+    height: 40vh;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+
 }
 .industrial__other_services{
     margin-top: 650px;
@@ -148,4 +154,7 @@
   height: auto;
   max-width: 100%;
 }   
+.card__header__bottom{
+    font-size: 20px;
+}
 }

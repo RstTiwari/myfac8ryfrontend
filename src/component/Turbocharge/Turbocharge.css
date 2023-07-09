@@ -3,12 +3,11 @@
     position:relative;
     padding: 60px 0px;
     width: 100%;
-    height: 100%;
 }
 .turbocharge__container{
     box-sizing: border-box;
     width: 100%;
-    margin-top: -70px;
+    margin-top: 130vh;
 }
 .turbocharge__title{
     padding-top: 50px;
@@ -19,7 +18,6 @@
 }
 .turbocharge__title__orderprocess{
     font-weight: 900;
-    padding-top: 100px;
     text-align: center;
     font-family: 'Open Sans',sans-serif!important;
     font-weight: 400!important;
@@ -70,7 +68,7 @@ h2{
 .turbocharge__container{
     box-sizing: border-box;
     width: 100%;
-    margin-top: -20px;
+    margin-top: 330vh;
 }
 .turbocharge__container .turbocharge__row{
     display: flex;
@@ -81,7 +79,6 @@ h2{
  .turbocharge__details1{
     display: flex;
     max-width:100%;
-    flex: 100%;
     width: 100%;
     height: 100%;
     font-size: 25px;
@@ -104,6 +101,12 @@ h2{
     margin-bottom: 10;
     text-align: center;
 }
+.turbocharge__container__bottom .turbocharge__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+ }
 }
 
 

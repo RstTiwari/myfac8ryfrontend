@@ -15,7 +15,7 @@ function Footer() {
           </a>
         </div>
       </section>
-      <div class="footer-links">
+      {/* <div class="footer-links">
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
@@ -97,7 +97,7 @@ function Footer() {
           </div>
           <small class="website-rights"> MyFac8ry © 2022</small>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

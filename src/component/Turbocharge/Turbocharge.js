@@ -16,7 +16,11 @@ const Turbocharge = () => {
         <div className="turbocharge__row">
           <div className="turbocharge__details1">
             <div className="turbocharge__details__text">
-              <img alt={"newtworkcapacity"} src={masscapcity} />
+              <img
+                className="turbocharge__details__image"
+                alt={"newtworkcapacity"}
+                src={masscapcity}
+              />
               <h3>Massive Network Capacity</h3>
               <p>
                 Instantly access the production capacity of over 200
@@ -50,7 +54,7 @@ const Turbocharge = () => {
           </div>
         </div>
       </div>
-      <div className="turbocharge__container">
+      <div className="turbocharge__container__bottom">
         <div className="turbocharge__title__orderprocess">
           <h2>How to Order Parts</h2>
         </div>

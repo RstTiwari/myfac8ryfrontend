@@ -4,6 +4,7 @@ import Hero from "./component/Hero/Hero";
 import IndustrialCard from "./component/IndustrialCards/IndustrialCard";
 import Turbocharge from "./component/Turbocharge/Turbocharge";
 import Footer from './component/Footer/Footer';
+import Orderprocess from './component/Orderprocess/Orderprocess';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero />
         <IndustrialCard />
         <Turbocharge />
+
         <Footer />
       </>
     </div>

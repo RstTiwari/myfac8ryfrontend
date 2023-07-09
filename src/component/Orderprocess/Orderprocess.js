@@ -1,67 +1,53 @@
 import React from 'react'
 import "./Orderprocess.css";
+import uploadfile from "../../Assets/uploadfile.svg";
+import orderPart from "../../Assets/orderparts.svg";
+import recivepart from "../../Assets/revice parts.svg";
 
 const Orderprocess = () => {
   return (
-    <div className="order__process">
-      <div className="order__process_container">
-        <div className="order__process_row">
-          <ol class="ProgressBar">
-            <li class="ProgressBar-step">
-              <svg class="ProgressBar-icon">
-                <use />
-              </svg>
-              <span class="ProgressBar-stepLabel">
-                instant quote
-                <p>Upload your CAD to our online quoting platform</p>
-              </span>
-            </li>
-            <li class="ProgressBar-step">
-              <svg class="ProgressBar-icon">
-                <use />
-              </svg>
-              <span class="ProgressBar-stepLabel">
-                Confirm specs
-                <p>
-                  Configure your part specifications and select a lead time that
-                  suits your schedule
-                </p>
-              </span>
-            </li>
-            <li class="ProgressBar-step">
-              <svg class="ProgressBar-icon">
-                <use />
-              </svg>
-              <span class="ProgressBar-stepLabel">
-                Production
-                <p>
-                  We select the best manufacturer for your order, and production
-                  begins immediately
-                </p>
-              </span>
-            </li>
-            <li class="ProgressBar-step">
-              <svg class="ProgressBar-icon">
-                <use />
-              </svg>
-              <span class="ProgressBar-stepLabel">
-                Quality control
-                <p>
-                  We take full responsibility for making sure your parts are
-                  manufactured according to our standards
-                </p>
-              </span>
-            </li>
-            <li class="ProgressBar-step">
-              <svg class="ProgressBar-icon">
-                <use />
-              </svg>
-              <span class="ProgressBar-stepLabel">Delivery</span>
-            </li>
-          </ol>
+    <div>
+      <div className="turbocharge__container">
+        <div className="turbocharge__title__orderprocess">
+          <h2>How to Order Parts</h2>
+        </div>
+        <div className="turbocharge__row">
+          <div className="turbocharge__details1">
+            <div className="turbocharge__details__text">
+              <img alt={"newtworkcapacity"} src={uploadfile} />
+              <h3>Upload your CAD files</h3>
+              <p>
+                To get your instant quote, just upload your files and select
+                your production process and material.
+              </p>
+            </div>
+          </div>
+          <div className="turbocharge__details1">
+            <div className="turbocharge__details__text">
+              <img alt={"newtworkcapacity"} src={orderPart} />
+              <h3>Place Order</h3>
+              <p>
+                After placing your order, production will start. You’ll receive
+                regular status updates.
+              </p>
+            </div>
+          </div>
+          <div className="turbocharge__details1">
+            <div className="turbocharge__details__text">
+              <img alt={"newtworkcapacity"} src={recivepart} />
+              <h3>Receive your parts</h3>
+              <p>
+                Within a short amount of time, you will receive the parts you
+                ordered directly to your shipping address. You can track your
+                package at any time in your personal account.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
+   
   );
 }
 
