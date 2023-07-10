@@ -7,21 +7,22 @@
 .turbocharge__container{
     box-sizing: border-box;
     width: 100%;
-    margin-top: 130vh;
+    margin-top: 135vh;
 }
 .turbocharge__title{
-    padding-top: 50px;
     text-align: center;
     font-family: 'Open Sans',sans-serif!important;
     font-weight: 400!important;
-    color: #092c47;
+    color: #fff;
+    background-color:black;
 }
 .turbocharge__title__orderprocess{
     font-weight: 900;
     text-align: center;
     font-family: 'Open Sans',sans-serif!important;
     font-weight: 400!important;
-    color: #092c47;
+    color: #fff;
+    background-color: rgb(12, 12, 12);
 }
 h2{
     font-size: 2rem;
@@ -71,6 +72,15 @@ h2{
     margin-top: 3000px;
 }
 }
+
+@media screen and (min-height:800px) {
+    .turbocharge__container{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2300px;
+}
+}
+    
 @media screen and (max-width:680px){
 .turbocharge__container{
     box-sizing: border-box;

@@ -170,6 +170,7 @@ const IndustrialCard = () => {
           </div>
         </div>
       </section>
+      
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Turbocharge.css"
+import "../Turbocharge/Turbocharge.css";
 import masscapcity from "../../Assets/massivenetworkcapacity1-01-1.svg"
 import quoteEnine from "../../Assets/myfac8ryinstantquote.svg";
 import statusUpdate from "../../Assets/statusMyfactory.svg";
@@ -9,7 +9,7 @@ import recivepart from "../../Assets/revice parts.svg";
 const Turbocharge = () => {
   return (
     <section className="turbocharge">
-      <div className="turbocharge__container">
+      <div className="turbocharge__container ">
         <div className="turbocharge__title">
           <h2>Turbocharge the way your Industrail Needs</h2>
         </div>
