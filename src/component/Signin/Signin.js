@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from "axios"
+import { AxiosCall } from "../../API/Axios";
 import "./Signin.css"
-let dev = true;
-let url = "https://myfac8ryapistage.vercel.app/api/";
-if(dev){
-  url = "http://localhost:4000/api/";
-}
+
+
 const Signin = () => {
   const [login , setLogin] = useState({
     email:"",
@@ -19,17 +16,17 @@ const Signin = () => {
       alert("Pleas Provide all details")
     }else{
           setLogin(login);
-          let response = await axios.post(
-            `${url}signin`,
-            login
-          );
-          if (response.data.success === 0) {
-            alert(`${response.data.message}`);
+          let response = await AxiosCall("POST", "signin",login);
+          if (response.success === 0) {
+            alert(`${response.message}`);
           } else {
             alert("Login succesfull")
             navigate("/");
-            localStorage.setItem("token", response.data.token)
-            localStorage.setItem("user", response.data.user.companyName);
+            localStorage.setItem("token", response.token)
+            localStorage.setItem("user", response.user.companyName);
+            localStorage.setItem("number", response.user.number);
+
+            setLogin("")
             
           }
 

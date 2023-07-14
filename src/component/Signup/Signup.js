@@ -1,13 +1,8 @@
 import React, { useState } from 'react'
-import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import "../Signup/Signup.css"
+import { AxiosCall } from '../../API/Axios';
 
-let dev = false;
-let url = "https://myfac8ryapi.vercel.app/api/";
-if (dev) {
-  url = "http://localhost:4000/api/";
-}
 
 const Signup = () => {
   const [signup , setsignup]  = useState({
@@ -26,15 +21,13 @@ const handleSubmit = async (event) => {
     alert("please fill all details")
   }else{
     setsignup(signup);
-    let response = await axios.post(
-      `${url}signup`,
-      signup
-    );
-    if (response.data.success === 0) {
-      alert(`${response.data.message}`);
+    let response = await AxiosCall("POST","signup",signup)
+    if (response.success === 0) {
+      alert(`${response.message}`);
     } else {
       navigate("/signin");
-      alert(`${response.data.message}`);
+      alert(`${response.message}`);
+      setsignup("")
     }
 
   } 
