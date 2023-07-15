@@ -2,7 +2,6 @@ import axios from "axios"
 import {Env}  from "../API/Env"
 
 let apiUrl = Env()
-console.log(apiUrl);
 
 export const AxiosCall = async (method, route, payload) => {
   let config = {
