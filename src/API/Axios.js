@@ -6,7 +6,7 @@ let apiUrl = Env()
 export const AxiosCall = async (method, route, payload) => {
   let config = {
     method: method,
-    url: `${apiUrl}${route}`,
+    url: `${apiUrl}api/${route}`,
     headers: { "Content-Type": "application/json" },
     data: payload,
   };
@@ -26,7 +26,7 @@ export const AxiosCall = async (method, route, payload) => {
 export const userEnquiry = async (payload, userId) => {
     const config = {
       method: "post",
-      url: `${apiUrl}enquiry`,
+      url: `${apiUrl}api/enquiry`,
       headers: { "Contetnt-Type": "multipart/form-data", userId },
       data:payload
     };
