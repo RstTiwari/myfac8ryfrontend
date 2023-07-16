@@ -1,5 +1,5 @@
 export const Env = () => {
-  let apiUrl = "http://147.182.141.127:4000/api/";
+  let apiUrl = "https://147.182.141.127:4000/fac8ry/api/";
   if (process.env.NODE_ENV === "development") {
     apiUrl = "http://localhost:4000/api/";
   }
