@@ -25,26 +25,31 @@ const Header = () => {
       <div className="navbar">
         <div className="container__logo">
           <a href="/">
-            <span>My</span>
-            Fac8ry
+            <span>MyFac8ry</span>
           </a>
         </div>
         <div className="container">
           <div className="navmenu__item">
-            {/* <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li>
-                <a href="/">Hardwares</a>
+                <a href="/cncmachining/">CNC Machining</a>
               </li>
               <li>
-                <a href="/">Raw Material</a>
+                <a href="/sheetmetal/">Sheet Metal</a>
               </li>
               <li>
-                <a href="/">Equipments</a>
+                <a href="/injectionmolding/">Injection Molding</a>
+              </li>
+              <li>
+                <a href="/3dprinting/">3D Printing</a>
+              </li>
+              <li>
+                <a href="/customfabrication/">Custom Fabrication</a>
               </li>
               <li className="how__we__diffrent">
-                <a href="/">How we're diffrent</a>
+                <a href="/aboutus/">How we're diffrent</a>
               </li>
-            </ul> */}
+            </ul>
           </div>
         </div>
         <div className="signin__button">
@@ -66,14 +71,13 @@ const Header = () => {
             </>
           )}
         </div>
-
-        {/* <div className="hamburger" onClick={handleClick}>
+        <div className="hamburger" onClick={handleClick}>
           {click ? (
             <HiOutlineX className="icon" />
           ) : (
             <HiMenu className="icon" />
           )}
-        </div> */}
+        </div>
       </div>
     </header>
   );

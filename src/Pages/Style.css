@@ -1,0 +1,117 @@
+
+.page__border {
+    height: 100vh;
+
+}
+.pageRow1Aboutus {
+    height: 1000px;
+}
+.pageRow2{
+    padding: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.pageRow2Injection {
+     padding: 30px;
+    height: 600px;
+    display: flex;
+
+}
+.pageRow3{
+    height: 500px;
+}
+.pageRow3Injection {
+    height: 300px;
+
+
+}
+.pageRow3__InnerDiv {
+    display: flex;
+    padding: 50px;
+}
+.pageRowTitle {
+    text-align: center;
+    background-color: #000;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffF
+}
+.pageRowTitle_aboutUs {
+    background-color: #000;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+.pageRowPartA {
+    width: 50%;
+    padding: 20px;
+}
+.pageRowPartB {
+    width: 50%;
+    padding: 20px;
+
+}
+.rowHeading {
+    padding: 30px;
+    width: 50%;
+}
+.rowHeadingTagline {
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+.rowImage {
+    width: 50%;
+}
+
+@media screen  and (max-width:940px){
+    .pageRow2 {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+
+    }
+    .pageRow2Injection {
+        display: flex;
+        flex-direction: column;
+       height: 700px;
+
+}
+    .pageRow3 {
+        height: 700px;
+    }
+    .pageRow3__InnerDiv {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .pageRowPartA {
+        width: 100%;
+        padding: 10px;
+
+    }
+    .pageRowPartB {
+        width: 100%;
+        padding: 10px;
+
+    }
+    .rowHeading {
+    padding: 20px;
+    width: 100%;
+   }
+   .rowImage {
+    width: 100%;
+  }
+  .pageRowImage {
+    width: 100%;
+  }
+  .pageRowTitle {
+    text-align: center;
+    font-size: 1.1rem;
+}
+.rowHeadingTagline {
+    font-size: 1rem;
+    padding-top: 30px;
+}
+}
+    

@@ -35,6 +35,9 @@ header {
 .navbar span {
     color: #5651e5;
 }
+.navbar .navmenu__item {
+    color: #5651e5;
+}
 
 .navbar .nav-menu {
     display: flex;
@@ -102,7 +105,7 @@ header {
         top: 50px;
         right: -100%;
         width: 100%;
-        background: rgba(255,255,255, .98);
+        background: rgba(255, 255, 255, 0.98);
         transition: 0.4s ease-in-out;
         z-index: 1000;
         

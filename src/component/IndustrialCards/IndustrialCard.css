@@ -1,16 +1,12 @@
 
 .industrial__card{
-    position: relative;
     display: flex;
     justify-content: center;
-    height: 100%;
     width: 100%;
-    
 }
 .industrial__card .row {
-    position: absolute;
     background-color:transparent;
-    margin-top:58vh;
+    height: 600px;
 }
 
 .row .continer__row{
@@ -28,6 +24,10 @@
     display: flex;
     flex-direction: column;
     transition: all 0.2s;
+    border: 1px solid #8f9699;
+    background-color: #fff;
+
+
 }
 
 
@@ -85,7 +85,7 @@
     padding: 10px 0px 10px 0px;
 }
 .other_services_row .card__header__title{
-        font-size: 20px;
+   font-size: 20px;
     font-weight: 700;
     line-height: 22px;
     color: #0a304e;
@@ -103,11 +103,9 @@
         display: none;
     }
 .industrial__card .row {
-    position: absolute;
-    height: 100vh;
+    height: 2300px;
     background-color:transparent;
     padding: 20px;
-    margin-top:460px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -125,7 +123,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid #d8dee1;
+    border: 1px solid #8f9699;
     border-radius: 5px;
     background-color: #fff;
     transition: all 0.4s;

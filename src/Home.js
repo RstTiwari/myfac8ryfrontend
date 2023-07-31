@@ -14,7 +14,6 @@ const Home = () => {
         <Hero />
         <IndustrialCard />
         <Turbocharge />
-
         <Footer />
       </>
     </div>

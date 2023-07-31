@@ -171,6 +171,7 @@ const IndustrialCard = () => {
         </div>
       </section>
       
+      
     </>
   );
 }

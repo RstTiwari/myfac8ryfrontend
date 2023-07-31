@@ -4,64 +4,71 @@ import {IoShieldCheckmarkOutline} from "react-icons/io5"
 import {BiLock} from "react-icons/bi"
 import "./Hero.css"
 import "../IndustrialCards/IndustrialCard.css";
+import bgImage  from "../../Assets/myfac8ryProcess.svg"
 
 const Hero = () => {
   return (
-    <main className="hero_content">
-      <section>
-        <div className="hero_container">
-          <section className="hero_container__section">
-            <div className="hero_container__section1">
-              <div className="row">
-                <div className="hero_homepage">
-                  <div className="hero__landingheader">
-                    <h1>The Digital Manufacturing Platform</h1>
-                  </div>
-                  <div className="hero__landingtext">
-                    <div className="hero__landingtext__subheadline">
-                      With over 200 manufacturers , suppliers in India, our
-                      network has the capacity you need for prototyping,
-                      production,and Mass Production.
+    <div className="hero_content">
+        <div className="hero__section">
+          <div className="hero_container">
+            <section className="hero_container__section">
+              <div className="hero_container__section1">
+                <div className="row">
+                  <div className="hero_homepage">
+                    <div className="hero__landingheader">
+                      <h1>The Digital Manufacturing Platform</h1>
                     </div>
-                    <div className="hero__landingtext__symbol">
-                      <div className="hero__landingtext__symbol1">
-                        <div className="hero__landingtext__symbol__time">
-                          <FaCalendarCheck className="fa_calender" />
+                    <div className="hero__landingtext">
+                      <div className="hero__landingtext__subheadline">
+                        With over 200 manufacturers , suppliers across the
+                        globe, our network has the capacity you need for
+                        prototyping, production,and Mass Production.
+                      </div>
+                      <div className="hero__landingtext__symbol">
+                        <div className="hero__landingtext__symbol1">
+                          <div className="hero__landingtext__symbol__time">
+                            <FaCalendarCheck className="fa_calender" />
+                          </div>
+                          <div className="hero__landingtext__symbol__text">
+                            Parts in as Fast as 3 Days
+                          </div>
                         </div>
-                        <div className="hero__landingtext__symbol__text">
-                          Parts in as Fast as 3 Days
+                        <div className="hero__landingtext__symbol2">
+                          <div className="hero__landingtext__symbol__quality">
+                            <IoShieldCheckmarkOutline className="fa_shield" />
+                          </div>
+                          <div className="hero__landingtext__symbol__text">
+                            Strong QA
+                            <br />
+                            ISO 9001 Certified
+                          </div>
                         </div>
                       </div>
-                      <div className="hero__landingtext__symbol2">
-                        <div className="hero__landingtext__symbol__quality">
-                          <IoShieldCheckmarkOutline className="fa_shield" />
-                        </div>
-                        <div className="hero__landingtext__symbol__text">
-                          Strong QA
-                          <br />
-                          ISO 9001 Certified
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div className="hero__landing__logo">
-                    <a href="/customerarea" className="instant__quote__button">
-                      Get Your Instant Quote
-                    </a>
-                  </div>
-                  <div>
-                    <p className="secure__lock">
-                      <BiLock className="fa__lock" />
-                      All uploads are secure and confidential.
-                    </p>
+                    <div className="hero__landing__logo">
+                      <a
+                        href="/customerarea"
+                        className="instant__quote__button"
+                      >
+                        Get Your Instant Quote
+                      </a>
+                    </div>
+                    <div>
+                      <p className="secure__lock">
+                        <BiLock className="fa__lock" />
+                        All uploads are secure and confidential.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
+          <div className="hero__bgImage">
+            <img className='bgImage' alt="bgImage" src={bgImage} />
+          </div>
         </div>
-      </section>
-    </main>
+    </div>
   );
 }
 
