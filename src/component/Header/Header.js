@@ -23,10 +23,18 @@ const Header = () => {
   return (
     <header>
       <div className="navbar">
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <HiOutlineX className="icon" />
+          ) : (
+            <HiMenu className="icon" />
+          )}
+        </div>
         <div className="container__logo">
           <a href="/">
-            <span>MyFac8ry</span>
+            <span>MyFac8ry</span> <br />
           </a>
+          <span className="tagline">Future of Manufacturing</span>
         </div>
         <div className="container">
           <div className="navmenu__item">
@@ -55,7 +63,6 @@ const Header = () => {
         <div className="signin__button">
           {companyName ? (
             <div className="after__signin">
-              {companyName}
               <HiOutlineUserCircle className="icon" />
             </div>
           ) : (
@@ -69,13 +76,6 @@ const Header = () => {
                 </a>
               </div>
             </>
-          )}
-        </div>
-        <div className="hamburger" onClick={handleClick}>
-          {click ? (
-            <HiOutlineX className="icon" />
-          ) : (
-            <HiMenu className="icon" />
           )}
         </div>
       </div>

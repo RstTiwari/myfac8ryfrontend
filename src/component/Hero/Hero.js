@@ -50,7 +50,7 @@ const Hero = () => {
                         href="/customerarea"
                         className="instant__quote__button"
                       >
-                        Get Your Instant Quote
+                        Your Instant Quote
                       </a>
                     </div>
                     <div>

@@ -18,8 +18,7 @@ const IndustrialCard = () => {
                 <div className="card__header__bottom">
                   Order high-quality precision CNC machined parts from a network
                   of experienced global manufacturers capable of hitting
-                  tolerances as tight as +/- 0.002mm. Choose from over 30 metal
-                  and plastic materials and finishes.
+                  tolerances as tight as +/- 0.002mm. Choose from over 30  materials.
                 </div>
               </div>
             </div>
@@ -34,8 +33,7 @@ const IndustrialCard = () => {
                 <div className="card__header__bottom">
                   Order high-quality precision CNC machined parts from a network
                   of experienced global manufacturers capable of hitting
-                  tolerances as tight as +/- 0.002mm. Choose from over 30 metal
-                  and plastic materials and finishes.
+                  tolerances as tight as +/- 0.002mm. Choose from over 30 materials .
                 </div>
               </div>
             </div>

@@ -22,12 +22,12 @@ const CNCMachinging = () => {
                 <div className="row">
                   <div className="hero_homepage">
                     <div className="hero__landingheader">
-                      <h1>THE SHEET META PARTS</h1>
+                      <h1>THE SHEET METAL PARTS</h1>
                     </div>
                     <div className="hero__landingtext">
                       <div className="hero__landingtext__subheadline">
                         Delivering immaculate Sheet Metal parts worldwide in as
-                        little as 4 days. Whether you’re looking for low or high
+                        little as 3 days. Whether you’re looking for low or high
                         volumes of sheet metal parts, we’ve got you covered.
                       </div>
                       <div className="hero__landingtext__symbol">
@@ -56,7 +56,7 @@ const CNCMachinging = () => {
                         href="/customerarea"
                         className="instant__quote__button"
                       >
-                        GET SHEET METAL QUOTE
+                        SHEET METAL QUOTE
                       </a>
                     </div>
                     <div>

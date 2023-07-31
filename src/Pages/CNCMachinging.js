@@ -57,7 +57,7 @@ const CNCMachinging = () => {
                         href="/customerarea"
                         className="instant__quote__button"
                       >
-                        GET CNC PART QUOTE
+                         CNC PART QUOTE
                       </a>
                     </div>
                     <div>
@@ -87,7 +87,7 @@ const CNCMachinging = () => {
             parts for customers all over the globe. With our partners’
             expertise, our engineers’ attention to detail and our entire team’s
             commitment to exceptional quality assurance at every stage, you can
-            rest assured that with Geomiq, you’ll receive the perfect CNC
+            rest assured that with Myfac8ry, you’ll receive the perfect CNC
             Machined parts – the first time, every time.
           </p>
         </div>

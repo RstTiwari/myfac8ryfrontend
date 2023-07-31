@@ -45,7 +45,7 @@
  }
  .hero_container  .hero__landingheader h1{
     color: #0a304e;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 56px;
     margin-bottom: 16px;
@@ -70,7 +70,7 @@
  
  .row .hero__landingtext__subheadline{
     color: #0c171f;
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 23px;
     margin-bottom: 24px;
  }
@@ -162,7 +162,7 @@
 }
  .hero__bgImage {
    width: 100%;
-   margin-top:20px ;
+   margin-top:50px ;
    
  }
  .bgImage {

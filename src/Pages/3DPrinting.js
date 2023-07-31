@@ -56,7 +56,7 @@ const CNCMachinging = () => {
                         href="/customerarea"
                         className="instant__quote__button"
                       >
-                        GET 3D PRINTED PART QUOTE
+                        3D PRINTED PART QUOTE
                       </a>
                     </div>
                     <div>

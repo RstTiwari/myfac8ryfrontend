@@ -3,10 +3,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
+
 }
 .industrial__card .row {
     background-color:transparent;
-    height: 600px;
+    height: 500px;
 }
 
 .row .continer__row{
@@ -16,8 +17,7 @@
 }
 .row .industrial__card__desktop{
     flex: 1 0 0 21%;
-    margin: 2vw;
-    height: 20vh;
+    margin: 20px;
 }
 
 .row .card__header{
@@ -32,10 +32,10 @@
 
 
 .row .card__header__title {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 22px;
-    height: 10vh;
+    height: 50px;
     background-color: #fff;
     color: #0a304e;
     text-align: center;
@@ -47,8 +47,8 @@
     text-align: center;
 }
 .row .industrial__card__desktop .card__header__bottom{
-     font-size: 20px;
-    height: 40vh;
+    font-size: 1.2rem;
+    height: 200px;
     background-color: #fff;
     color: #000;
     text-align: center;
