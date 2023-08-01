@@ -87,10 +87,7 @@ const CNCMachinging = () => {
             Injection moulding is the most cost-effective way to make a perfect
             plastic part at scale. At Geomiq, we’re proud to partner with 150+
             experienced and highly vetted manufacturers, who have a proven track
-            record of making high-precision Injection Moulded parts for
-            customers all over the globe. With our partners’ expertise, our
-            engineers’ attention to detail and our entire team’s commitment to
-            exceptional quality assurance at every stage
+            record of making high-precision Injection Moulded parts.
           </p>
         </div>
         <div className="rowImage">

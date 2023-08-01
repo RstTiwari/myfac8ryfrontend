@@ -132,6 +132,9 @@ li.active a:before,
     .hamburger {
         display: block;
         margin-right: 20px;
+        margin-left: 20px;
+        font-size: 25px;
+
     }
  .navbar .container__logo{
     display: flex;
