@@ -53,6 +53,8 @@ const Signup = () => {
         }
       } catch (error) {
         alert(error);
+        setLoader(false);
+
         
       }
     }

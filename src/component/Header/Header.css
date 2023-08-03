@@ -215,9 +215,7 @@ li.active a:before,
       align-items: center;
       padding: 10px 15px !important;
 }
-.after__signin__Drawer {
-    width: 200px;
-}
+
 
      .navbar .getQuote__btn  {
         display: none;

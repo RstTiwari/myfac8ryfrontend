@@ -92,7 +92,7 @@ const onClose = ()=>{
         <div className="signin__button">
           {companyName ? (
             <div className="after__signin" onClick={showDrawer}>
-              <Avatar size={"large"} className="after__signin__Drawer">
+              <Avatar size={"large"} >
                 {companyName.slice(0, 1).toUpperCase()}
               </Avatar>
             </div>
