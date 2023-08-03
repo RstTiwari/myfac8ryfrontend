@@ -43,6 +43,8 @@ const Signin = () => {
             }
           } catch (error) {
             alert("Sever is not working try again")
+            setLoader(false);
+
           }
           
 
