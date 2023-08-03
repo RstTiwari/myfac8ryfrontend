@@ -1,113 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
 
-body {
-  background-color: #fff;
-  font-family: Montserrat;
-  overflow-x: hidden;
-}
 
-article,
-aside,
-details,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
-  text-decoration: none;
-}
-
-img {
-  border: none;
-}
-
-*:focus {
-  outline: none;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.bg-illustration {
+.parent_clearfix {
+  display: flex;
+  flex-direction: row;
   position: relative;
+
+}
+.bg__signin {
   height: 100vh;
-  width: 1194px;
-  background: url("../../Assets/6909.jpg") no-repeat center center scroll;
-  background-size: cover;
-  float: left;
-  -webkit-animation: bgslide 2.3s forwards;
-          animation: bgslide 2.3s forwards;
+  margin-top: 76px;
+  width: 50%;
+  background-color:rgb(0, 22, 98);
+
 }
-.bg-illustration img {
-  width: 248px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  height: auto;
-  margin: 19px 0 0 25px;
+.signin__title__div {
+  margin-top: 100px;
 }
 
-@-webkit-keyframes bgslide {
-  from {
-    left: -100%;
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    width: 1194px;
-    opacity: 1;
-  }
+.signin__view__area {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
+.signin__description__area {
+  margin-top: 20px;
+  display: flex;
+}
+.signin__description__row {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.signin__description__image {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
 
-@keyframes bgslide {
-  from {
-    left: -100%;
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    width: 1194px;
-    opacity: 1;
-  }
+}
+.signin__description__text{
+  margin-left: 10px;
+  color: white;
+}
+.signin__description__image img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;  
+
+}
+.signin__title {
+  text-align: center;
+  color: whitesmoke;
 }
 
 
 .login {
-  max-height: 100vh;
-  overflow-Y: auto;
-  float: left;
-  margin: 0 auto;
-  width: calc(100% - 1194px);
+  max-height: 100%;
+  margin-top: 76px;
+  width: 50%;
 }
 .login .container {
   width: 505px;
@@ -131,7 +86,7 @@ img {
   font-weight: normal;
   background: rgba(57, 57, 57, 0.07);
   margin: 12.5px 0;
-  height: 68px;
+  height: 50px;
   border: none;
   padding: 0 30px;
   border-radius: 10px;
@@ -232,56 +187,25 @@ img {
             animation: none;
   }
 
-  .login {
-    width: 50%;
-  }
 }
 /* Display 12", iPad PRO Portrait, iPad landscape */
 @media only screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
-
-  @-webkit-keyframes slideIn {
-    from {
-      left: -100%;
-      opacity: 0;
-    }
-    to {
-      left: 0;
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideIn {
-    from {
-      left: -100%;
-      opacity: 0;
-    }
-    to {
-      left: 0;
-      opacity: 1;
-    }
-  }
-  .bg-illustration {
-    display: none;
-
-    float: none;
-    background: url("https://i.ibb.co/rwncw7s/bg-mobile.png") center center;
-    background-size: cover;
-    -webkit-animation: slideIn 0.8s ease-in-out forwards;
-            animation: slideIn 0.8s ease-in-out forwards;
+.parent_clearfix{
+  display: flex;
+  flex-direction: column;
+}
+ 
+  .bg__signin {
+    display: flex;
+    flex-direction:column;
     width: 100%;
-    height: 190px;
     text-align: center;
+    height: 650px;
   }
-  .bg-illustration img {
-    display: none;
-    width: 100px;
-    height: auto;
-    margin: 20px auto !important;
-    text-align: center;
-  }
+
   .bg-illustration .burger-btn {
     left: 33px;
     top: 29px;
@@ -315,12 +239,9 @@ img {
     width: 85%;
     float: none;
   }
-  .login .container h1 {
-    font-size: 25px;
-    margin-top: 40px;
-  }
+  
   .login .container .login-form {
-    margin-top: 90px;
+    margin-top: 20px;
   }
   .login .container .login-form form input {
     height: 45px;

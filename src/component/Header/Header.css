@@ -26,9 +26,35 @@ header {
     margin-left: 35px;
 }
 .tagline {
-    font-size: 10px;
+    font-size: 9px;
 }
+.profile_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0087ee;
 
+}
+.profile_details__name {
+    margin-left: 10px;
+    font-size: 15px;
+    color: blue;
+}
+.profile_details__signout {
+    display: flex;
+
+}
+.myaccount {
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+}
+.signout {
+    display: flex;
+    width: 50%;
+    float: right;
+    align-items: flex-end;
+}
 .navbar .container {
     height: 100%;
     display: flex;
@@ -71,9 +97,9 @@ header {
 
 }
 .after__signin{
-      color: #0087ee;
-      display: flex;
+      color:white;
       align-items: center;
+      font-size: 25px;
 }
 .signin__button__mobile{
     display: none;
@@ -184,11 +210,13 @@ li.active a:before,
 
 }
 .after__signin{
-      color: #0087ee;
+      color:white;
       display: flex;
       align-items: center;
       padding: 10px 15px !important;
-      margin-right: 30px;
+}
+.after__signin__Drawer {
+    width: 200px;
 }
 
      .navbar .getQuote__btn  {
