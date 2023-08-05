@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.wtsp__img {
+  width: 3rem;
+  display: flex;
+  position: fixed;
+  margin-left: 90vw;
+  float: right;
+}
+
+.wtsp__img__icon {
+  width: 100%;
+}
+
+@media screen and (max-width:992px)
+{
+  .wtsp__img{
+  margin-top: -75px;
+  width: 50px;
+  position: fixed;
+  margin-left: 80vw;
+  float: right;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+    .wtsp__img{
+  margin-top: -250px;
+  width: 50px;
+  position: fixed;
+  margin-left: 80vw;
+  float: right;
+  }
+  
+}
