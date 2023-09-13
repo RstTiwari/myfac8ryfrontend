@@ -8,6 +8,8 @@ const ProjectDetails = () => {
 
   const [projectData, setProjectData] = useState({});
   const [images,setImages] = useState("")
+  const [components, setComponent] = useState([]);
+
   const {projectId}= useParams()
 
   const getProductDetails = async () => {
@@ -22,6 +24,7 @@ const ProjectDetails = () => {
       }
       setProjectData(data.data);
       setImages(data.data.images[0])
+      setComponent(data.data.components)
     } catch (error) {
       console.error(error);
     }
@@ -30,7 +33,6 @@ const ProjectDetails = () => {
     getProductDetails();
   }, []);
   
-
   return (
     <div className="page__border">
       <div>
@@ -38,12 +40,18 @@ const ProjectDetails = () => {
           <div className="pageRow3__InnerDiv">
             <div className="pageRowPartA">
               <h1>{projectData.title}</h1>
-              <img
-                className="projectTitleImage"
-                alt="img"
-                src= {images}
-              />
+              <img className="projectTitleImage" alt="img" src={images} />
               <p className="projectDescription">{projectData.description}</p>
+              <div className="components">
+                <h1>Components <br/></h1>
+                {components.length > 0 ? (components.map((item)=>{
+                  return (
+                    <ol>
+                      <h5>{item}</h5>
+                    </ol>
+                  );
+                })):(<></>)}
+              </div>
               <div>
                 <p>
                   <h1>Price:{projectData.price}</h1>

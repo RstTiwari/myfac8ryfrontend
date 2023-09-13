@@ -132,11 +132,11 @@ const ProjectList = ({ type }) => {
               {projectData.length > 0 ? (
                 projectData.map((item) => {
                   return (
-                    <li key={item.projectId}>
-                      <a href={`/productDetails/${item.projectId}`}>
+                    <ol key={item.projectId}>
+                      <Link to={`/productDetails/${item.projectId}`}>
                         {item.title}
-                      </a>
-                    </li>
+                      </Link>
+                    </ol>
                   );
                 })
               ) : (

@@ -16,7 +16,7 @@ const Hero = () => {
               <div className="row">
                 <div className="hero_homepage">
                   <div className="hero__landingheader">
-                    <h1>Crafting Innovation, Building Excellence </h1>
+                    <h1>Crafting Innovation,Building Excellence </h1>
                   </div>
                   <div className="hero__landingtext">
                     <div className="hero__landingtext__subheadline">

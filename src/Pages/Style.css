@@ -55,7 +55,7 @@
 .pageRowPartA {
     width: 100%;
     display: flex;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
     align-items: center;
 }
@@ -65,9 +65,15 @@
         padding: 10px;
 }
 .projectDescription {
-       font-size: 20px;
-        width: 500px;
+        font-size: 20px;
+        width: 600px;
         padding: 10px;
+}
+.components {
+    display: flex;
+    margin-left: -20px;
+    flex-direction: column;
+    align-items: center;
 }
 .pageRowPartB {
     width: 50%;

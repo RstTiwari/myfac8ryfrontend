@@ -22,16 +22,29 @@ import ProjectDetails from "./Pages/ProjectDetails";
 function App() {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
+
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/ai-ml/" element={<ProjectList type ="ai-ml" />} />
-            <Route path="/hardware/" element={<ProjectList type ='hardware' />} />
-            <Route path="/mechanical/" element={<ProjectList type ="mechanical" />} />
-            <Route path="/industrial/" element={<ProjectList type = "industrial" />} />
-            <Route path="/productDetails/:projectId" element={<ProjectDetails />} />
+            <Route path="/ai-ml/" element={<ProjectList type="ai-ml" />} />
+            <Route
+              path="/hardware/"
+              element={<ProjectList type="hardware" />}
+            />
+            <Route
+              path="/mechanical/"
+              element={<ProjectList type="mechanical" />}
+            />
+            <Route
+              path="/industrial/"
+              element={<ProjectList type="industrial" />}
+            />
+            <Route
+              path="/productDetails/:projectId"
+              element={<ProjectDetails />}
+            />
 
             <Route
               path="/customfabrication/"
