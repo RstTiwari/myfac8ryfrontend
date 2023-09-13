@@ -102,6 +102,7 @@
 }
     .pageRow3 {
         height: auto;
+        color: #ffF;
     }
     .pageRow3__InnerDiv {
         display: flex;
