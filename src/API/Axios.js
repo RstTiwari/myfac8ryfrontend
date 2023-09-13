@@ -19,7 +19,7 @@ export const AxiosCall = async (method, route, payload) => {
   } catch (error) {
     console.error(error);
   }
-  return data;
+  return data ;
 };
 
 

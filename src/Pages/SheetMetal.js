@@ -11,7 +11,7 @@ import LathImage from "../Assets/myfac8rySheetMetal2.jpg";
 import LathImage2 from "../Assets/myfac8ry_sheetMetal.jpg";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { BiLock } from "react-icons/bi";
-const CNCMachinging = () => {
+const ProjectList = () => {
   return (
     <div className="page__border">
       <div className="pageRow1">
@@ -141,4 +141,4 @@ const CNCMachinging = () => {
   );
 };
 
-export default CNCMachinging;
+export default ProjectList;

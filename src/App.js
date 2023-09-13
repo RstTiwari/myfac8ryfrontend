@@ -6,12 +6,13 @@ import Signup from "./component/Signup/Signup";
 import Header  from "./component/Header/Header"
 import Home from "./Home";
 import Coutomerarea from "./component/Coustomerarea/Coutomerarea";
-import CNCMachinging from "./Pages/CNCMachinging";
+import ProjectList from "./Pages/ProjectList";
 import SheetMetal from "./Pages/SheetMetal";
 import InjectionMolding from "./Pages/InjectionMolding";
 import ThreeDPriting from "./Pages/3DPrinting";
 import CoustomFabrication from "./Pages/CustomFabrication";
 import AboutUs from "./Pages/Aboutus";
+import ProjectDetails from "./Pages/ProjectDetails";
 
 
 
@@ -26,10 +27,12 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cncmachining/" element={<CNCMachinging />} />
-            <Route path="/sheetmetal/" element={<SheetMetal />} />
-            <Route path="/injectionmolding/" element={<InjectionMolding />} />
-            <Route path="/3dprinting/" element={<ThreeDPriting />} />
+            <Route path="/ai-ml/" element={<ProjectList type ="ai-ml" />} />
+            <Route path="/hardware/" element={<ProjectList type ='hardware' />} />
+            <Route path="/mechanical/" element={<ProjectList type ="mechanical" />} />
+            <Route path="/industrial/" element={<ProjectList type = "industrial" />} />
+            <Route path="/productDetails/:projectId" element={<ProjectDetails />} />
+
             <Route
               path="/customfabrication/"
               element={<CoustomFabrication />}

@@ -16,7 +16,7 @@ const Home = () => {
         <Hero />
 
         <div className="wtsp__img">
-          <a href="https://wa.me/+918767948130">
+          <a href="https://wa.me/+918928772801">
             <img className="wtsp__img__icon" alt="wtsp" src={Wtsplogo} />
           </a>
         </div>

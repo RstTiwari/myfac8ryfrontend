@@ -61,30 +61,24 @@ const onClose = ()=>{
         </div>
         <div className="container__logo">
           <a href="/">
-            <span>MyFac8ry</span> <br />
+            <span>MerakiInnovation</span> <br />
           </a>
-          <span className="tagline">Future of Manufacturing</span>
+          <span className="tagline">"Where Ideas Take Shape"</span>
         </div>
         <div className="container">
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li>
-                <a href="/cncmachining/">CNC Machining</a>
+                <a href="/ai-ml/">AI-ML PROJECTS</a>
               </li>
               <li>
-                <a href="/sheetmetal/">Sheet Metal</a>
+                <a href="/hardware/">HARDWARE PROJECTS</a>
               </li>
               <li>
-                <a href="/injectionmolding/">Injection Molding</a>
+                <a href="/mechanical/">MECHANICAL PROJECTS</a>
               </li>
               <li>
-                <a href="/3dprinting/">3D Printing</a>
-              </li>
-              <li>
-                <a href="/customfabrication/">Custom Fabrication</a>
-              </li>
-              <li className="how__we__diffrent">
-                <a href="/aboutus/">How we're diffrent</a>
+                <a href="/industrial/">INDUSTRIAL PROJECTS</a>
               </li>
             </ul>
           </div>
@@ -92,7 +86,7 @@ const onClose = ()=>{
         <div className="signin__button">
           {companyName ? (
             <div className="after__signin" onClick={showDrawer}>
-              <Avatar size={"large"} >
+              <Avatar size={"large"}>
                 {companyName.slice(0, 1).toUpperCase()}
               </Avatar>
             </div>

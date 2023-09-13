@@ -9,7 +9,7 @@ const Orderprocess = () => {
     <div>
       <div className="turbocharge__container">
         <div className="turbocharge__title__orderprocess">
-          <h2>How to Order Parts</h2>
+          <h2>How to Order PROJECT</h2>
         </div>
         <div className="turbocharge__row">
           <div className="turbocharge__details1">

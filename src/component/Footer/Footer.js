@@ -7,11 +7,11 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Put your parts into production today
+          Put your PROJECT into production today
         </p>
         <div className="hero__landing__logo">
-          <a href="/customerarea" className="instant__quote__button">
-            Get Your Instant Quote
+          <a href="https://wa.me/+918928772801" className="instant__quote__button">
+            GET YOUR PROJECT IDEA
           </a>
         </div>
       </section>
