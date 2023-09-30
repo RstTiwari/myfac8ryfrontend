@@ -4,7 +4,7 @@ import {IoShieldCheckmarkOutline} from "react-icons/io5"
 import {BiLock} from "react-icons/bi"
 import "./Hero.css"
 import "../IndustrialCards/IndustrialCard.css";
-import bgImage  from "../../Assets/myfac8ryProcess.svg"
+import bgImage  from "../../Assets/myfac8ryProcess.jpeg"
 
 const Hero = () => {
   return (
