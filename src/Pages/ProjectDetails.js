@@ -9,7 +9,8 @@ const ProjectDetails = () => {
   const [projectData, setProjectData] = useState({});
   const [images,setImages] = useState("")
   const [components, setComponent] = useState([]);
-
+  const [advantages,setAdvantage]   = useState([])
+ 
   const {projectId}= useParams()
 
   const getProductDetails = async () => {
@@ -25,6 +26,7 @@ const ProjectDetails = () => {
       setProjectData(data.data);
       setImages(data.data.images[0])
       setComponent(data.data.components)
+      setAdvantage(data.data.advantages)
     } catch (error) {
       console.error(error);
     }
@@ -39,18 +41,38 @@ const ProjectDetails = () => {
         <div className="pageRow3">
           <div className="pageRow3__InnerDiv">
             <div className="pageRowPartA">
-              <h1>{projectData.title}</h1>
+              <h1 className="projectLink">{projectData.title && projectData.title.toUpperCase()}</h1>
               <img className="projectTitleImage" alt="img" src={images} />
-              <p className="projectDescription">{projectData.description}</p>
               <div className="components">
-                <h1>Components <br/></h1>
+              <p className="projectDescription">
+                <h5 >
+                {projectData.description}
+                </h5>
+                </p>
+              <div className="twoDiv">
+                <div className="divLeft">
+                <h2 className="projectLink">COMPONENTS <br/></h2>
                 {components.length > 0 ? (components.map((item)=>{
                   return (
-                    <ol>
-                      <h5>{item}</h5>
+                    <ol className="projectList">
+                      <h4>{item}</h4>
                     </ol>
                   );
                 })):(<></>)}
+
+                </div>
+                <div className="divRight">
+                <h2 className="projectLink">ADVANTAGES <br/></h2>
+                {advantages.length > 0 ? (advantages.map((item)=>{
+                  return (
+                    <ol className="projectList">
+                      <h4>{item}</h4>
+                    </ol>
+                  );
+                })):(<></>)}
+
+                </div>
+              </div>
               </div>
               <div>
                 <p>

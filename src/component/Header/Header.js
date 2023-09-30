@@ -69,16 +69,18 @@ const onClose = ()=>{
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li>
-                <a href="/ai-ml/">AI-ML PROJECTS</a>
+              <a href="/mechanical/">MECHANICAL PROJECTS</a>
+
               </li>
               <li>
                 <a href="/hardware/">HARDWARE PROJECTS</a>
               </li>
               <li>
-                <a href="/mechanical/">MECHANICAL PROJECTS</a>
+              <a href="/industrial/">INDUSTRIAL PROJECTS</a>
               </li>
               <li>
-                <a href="/industrial/">INDUSTRIAL PROJECTS</a>
+              <a href="/ai-ml/">AI-ML PROJECTS</a>
+
               </li>
             </ul>
           </div>

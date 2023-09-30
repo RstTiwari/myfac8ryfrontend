@@ -15,9 +15,9 @@ const Orderprocess = () => {
           <div className="turbocharge__details1">
             <div className="turbocharge__details__text">
               <img alt={"newtworkcapacity"} src={uploadfile} />
-              <h3>Upload your CAD files</h3>
+              <h3>Talk To Technical Expert</h3>
               <p>
-                To get your instant quote, just upload your files and select
+                To get your instant quote, just Talk to Our Expert ,  select
                 your production process and material.
               </p>
             </div>

@@ -9,7 +9,7 @@ import recivepart from "../../Assets/revice parts.svg";
 const Turbocharge = () => {
   return (
     <section className="turbocharge">
-      <div className="turbocharge__container ">
+      {/* <div className="turbocharge__container ">
         <div className="turbocharge__title">
           <h2>Turbocharge the way your PROJECT IDEA</h2>
         </div>
@@ -53,7 +53,7 @@ const Turbocharge = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="turbocharge__container__bottom">
         <div className="turbocharge__title__orderprocess">
           <h2>How to Order PROJECT</h2>
