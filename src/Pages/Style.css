@@ -107,6 +107,27 @@
     display: flex;
     flex-direction: column;
 }
+.bestSellingPage {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+  .bestSellingGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .bestSellingCard{
+    width: 100%;
+    padding: 20px;
+  }
+  .bestSelling_images {
+    width: 50%;
+    height: 50%;
+  }
 @media screen  and (max-width:940px){
     .pageRow2 {
         display: flex;

@@ -6,9 +6,9 @@ import {
   HiOutlineLogin,
 } from "react-icons/hi";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-import { Avatar, Drawer, Space, Button } from "antd";
+import { Avatar, Drawer, Space, Button, Dropdown } from "antd";
 import isAuthenticated from "../../Helper/auth";
 const Header = () => {
 
@@ -49,6 +49,25 @@ const Header = () => {
 const onClose = ()=>{
   setOpenDrawer(false)
 }
+const  items = [
+  {
+    key: '1',
+    label: (
+      <Link to ={"/mechanical/"} >
+       MAJOR- PROJECTS
+      </Link>
+    ),
+  },
+  {
+    key: '2',
+    label: (
+      <Link to={"/mini-mechanical/"}>
+        MINI-PROJECTS
+      </Link>
+    ),
+  }
+
+];
   return (
     <header>
       <div className="navbar">
@@ -69,7 +88,17 @@ const onClose = ()=>{
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li>
-              <a href="/mechanical/">MECHANICAL PROJECTS</a>
+                <Dropdown
+                  menu={{
+                    items,
+                  }}
+                  trigger = {["click"]}
+                  arrow ={true}
+                >
+                    <Space>
+                    MECHANICAL PROJECTS
+                    </Space>
+                </Dropdown>
 
               </li>
               <li>

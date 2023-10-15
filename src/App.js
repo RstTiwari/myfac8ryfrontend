@@ -13,6 +13,7 @@ import ThreeDPriting from "./Pages/3DPrinting";
 import CoustomFabrication from "./Pages/CustomFabrication";
 import AboutUs from "./Pages/Aboutus";
 import ProjectDetails from "./Pages/ProjectDetails";
+import MiniProjectList from "./Pages/MiniProjectList";
 
 
 
@@ -36,6 +37,10 @@ function App() {
             <Route
               path="/mechanical/"
               element={<ProjectList type="mechanical" />}
+            />
+              <Route
+              path="/mini-mechanical/"
+              element={<MiniProjectList type="mechanical" price = {5000} />}
             />
             <Route
               path="/industrial/"

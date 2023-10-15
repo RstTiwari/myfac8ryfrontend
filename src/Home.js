@@ -7,6 +7,7 @@ import Turbocharge from "./component/Turbocharge/Turbocharge";
 import Footer from './component/Footer/Footer';
 import Orderprocess from './component/Orderprocess/Orderprocess';
 import Wtsplogo from "./Assets/myfac8ryWtsp.svg"
+import Bestselling from './Pages/Bestselling';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         </div>
 
         <IndustrialCard />
+        <Bestselling />
         <Turbocharge />
         <Footer />
       </>
