@@ -8,13 +8,14 @@ import {
 import "./Header.css";
 import { Link, useNavigate } from "react-router-dom";
 
-import { Avatar, Drawer, Space, Button, Dropdown } from "antd";
+import { Avatar, Drawer, Space, Button, Popover } from "antd";
 import isAuthenticated from "../../Helper/auth";
 const Header = () => {
 
   const [click, setClick] = useState(false);
   let email = localStorage.getItem("email")
   const handleClick = () => setClick(!click); 
+  const [clickCheked ,setClickChecked] =useState(false)
 
   const [openDrawer,setOpenDrawer] = useState(false)
   const [companyName , setCompanyName]  = useState()
@@ -49,25 +50,11 @@ const Header = () => {
 const onClose = ()=>{
   setOpenDrawer(false)
 }
-const  items = [
-  {
-    key: '1',
-    label: (
-      <Link to ={"/mechanical/"} >
-       MAJOR- PROJECTS
-      </Link>
-    ),
-  },
-  {
-    key: '2',
-    label: (
-      <Link to={"/mini-mechanical/"}>
-        MINI-PROJECTS
-      </Link>
-    ),
+  const getClickedChecked = () => {
+    setClickChecked(true)
   }
 
-];
+
   return (
     <header>
       <div className="navbar">
@@ -87,27 +74,36 @@ const  items = [
         <div className="container">
           <div className="navmenu__item">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li>
-                <Dropdown
-                  menu={{
-                    items,
-                  }}
-                  trigger = {["hover"]}
-                  arrow ={true}
-                >
-                    <Space>
-                    MECHANICAL PROJECTS
-                    </Space>
-                </Dropdown>
+              <li onClick={getClickedChecked}>
+                MECHANICAL PROJECTS
+                {clickCheked ? (
+                  <div className="getClicked">
+                    <div>
+                    <a to={"/mechanical/"} >
+                      MAJOR- PROJECTS
+                    </a>
+                    </div>
+                 
+                     <div> 
+                       <a to={"/mini-mechanical/"}>
+                      MINI-PROJECTS
+                    </a>
+                     </div>
+                  
+                  </div>
+
+                ) : (<></>)}
 
               </li>
-              <li>
+              <li onClick={()=> setClickChecked(false)}>
                 <a href="/hardware/">HARDWARE PROJECTS</a>
               </li>
-              <li>
+              <li onClick={()=> setClickChecked(false)}>
+              
               <a href="/industrial/">INDUSTRIAL PROJECTS</a>
               </li>
-              <li>
+              <li onClick={()=> setClickChecked(false)}>
+              
               <a href="/ai-ml/">AI-ML PROJECTS</a>
 
               </li>
@@ -115,7 +111,7 @@ const  items = [
           </div>
         </div>
         <div className="signin__button">
-          {companyName ? (
+          {/* {companyName ? (
             <div className="after__signin" onClick={showDrawer}>
               <Avatar size={"large"}>
                 {companyName.slice(0, 1).toUpperCase()}
@@ -132,7 +128,7 @@ const  items = [
                 </a>
               </div>
             </>
-          )}
+          )} */}
         </div>
       </div>
       <Drawer
