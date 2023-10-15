@@ -79,15 +79,15 @@ const onClose = ()=>{
                 {clickCheked ? (
                   <div className="getClicked">
                     <div>
-                    <a to={"/mechanical/"} >
+                    <Link to={"/mechanical/"} >
                       MAJOR- PROJECTS
-                    </a>
+                    </Link>
                     </div>
                  
                      <div> 
-                       <a to={"/mini-mechanical/"}>
+                       <Link to={"/mini-mechanical/"}>
                       MINI-PROJECTS
-                    </a>
+                    </Link>
                      </div>
                   
                   </div>
