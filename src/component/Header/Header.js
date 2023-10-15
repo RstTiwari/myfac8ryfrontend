@@ -92,7 +92,7 @@ const  items = [
                   menu={{
                     items,
                   }}
-                  trigger = {["click"]}
+                  trigger = {["hover"]}
                   arrow ={true}
                 >
                     <Space>
