@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
           <div className="quotation_button">
             <div className="hero__landing__logo">
-              <a href="/customerarea" className="instant__quote__button">
+              <a target="blank" href="https://ftms.myfac8ry.com/" className="instant__quote__button">
                 Start Using
               </a>
             </div>
