@@ -69,7 +69,7 @@ const Header = () => {
           ) : (
             <>
               <button>
-                <a href="/">Sign In</a>
+                <a target="blank" href="https://ftms.myfac8ry.com/">START FREE</a>
               </button>
               <div className="signin__button__mobile">
                 <a href="/signin">
