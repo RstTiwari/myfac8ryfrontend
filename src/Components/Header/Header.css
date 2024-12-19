@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}
+/* Navbar Container */
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231f1f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 1vw;
+}
+
+/* Navigation Links */
+.navlink {
+    list-style: none;
+    display: flex;
+    gap: 7vw;
+    margin-right: 50px;
+    padding: 0;
+    max-width: 50vw;
+    color: aliceblue;
+    font-size: x-large;
+    
+}
+
+/* Hidden Elements (for desktop view) */
+.icon,
+.call,
+.email,
+.expand,
+.clear {
+    display: none;
+}
+
+.buttons {
+    font-size: xx-large;
+    background-color: rgb(13, 16, 158);
+}
+
+/* Responsive Styles for Screen Width <= 880px */
+@media (max-width: 1070px) {
+    .call_email_icon {
+        display: flex;
+        gap: 5vw;
+        color: aliceblue;
+    }
+
+    .icon {
+        display: flex;
+    }
+    
+    .call,
+    .email,
+    .expand {
+        display: flex;
+        color: aliceblue;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .clear {
+        display: block;
+        margin-left: 90%;
+    }
+
+    /* Dropdown Menu Styles */
+   /* Dropdown Menu Styles */
+   .true {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    background-color: #231f1f;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    color: aliceblue;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.9s ease-in, transform 0.s ease; /* Adjusted duration */
+}
+
+.true.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+    .true li {
+        color: aliceblue;
+        font-size: larger;
+        margin: 10px;
+        text-align: start;
+    }
+
+    .buttons {
+        font-size: x-large;
+        background-color: red;
+    }
+}
+
+/* Responsive Styles for Screen Width <= 680px */
+@media (max-width: 680px) {
+    .main-nav {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .true {
+        width: 100%;
+        top: 0;
+        right: 0.5%;
+        border-top-left-radius: 10px;
+    }
+
+    .true li {
+        color: aliceblue;
+        font-size: larger;
+        margin: 10px;
+        text-align: start;
+    }
+
+    .call_email_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        color: aliceblue;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        background-color: red;
+        width: 100px;
+        height: 50px;
+        font-size: large;
+        color: aliceblue;
+    }
+}
