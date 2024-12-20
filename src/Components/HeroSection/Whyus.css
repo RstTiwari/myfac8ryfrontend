@@ -2,17 +2,66 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 5%;
-    font-weight: 300;
+    font-weight: 500;
     font-size: x-large;
+    text-align: center;
 }
 .NotSure{
     margin-top: 100px;
 }
 
+.textmaindiv{
+    background-color: #e20c03;
+    height: 20vh;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    /* flex-direction: column; */
+}
+.ptext{
+    color: white;
+    font-size: xx-large;
+    margin-left: 2vw;
+
+}
+.buttons1{
+    display: flex;
+    gap: 3vw;
+    height: 3rem;
+    margin-right: 2vw;
+}
+
+
 @media (max-width:950px) {
     .count{
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10vw;
         margin-top: 20px;
-    }  
+    }
+    .Texts{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: justify;
+        
+    }
+    .ptext{
+      text-wrap: wrap;
+      font-size: 1.4rem;
+    }
+    .buttons1{
+        flex-wrap: wrap;
+        margin-top: 1vw;
+        
+    }
+    .textmaindiv{
+        background-color: #e20c03;
+        height: 30vh;
+        width: 100%;
+        align-items: start;  
+    }
 }

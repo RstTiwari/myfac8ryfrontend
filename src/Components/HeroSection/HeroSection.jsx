@@ -12,7 +12,7 @@ export default function Hero() {
                     ON-demand <br /><span style={{ color: "#e20c03" }}>Manufacturing <br /> Platform</span>
                 </h1>
                 <p>The convenience of instant pricing for laser cut and bended metal parts.</p>
-                <br />
+        
                 <p>
                     With just a few clicks, you can upload your files of laser cut and bended metal parts,
                     specify your requirements, and receive an accurate quote within minutes.
@@ -20,9 +20,7 @@ export default function Hero() {
                     saving you time and ensuring cost transparency.
                     Perfect for engineers to place an order in minutes.
                 </p>
-                <br />
                 <p>Experience the ease of getting your price without the wait!</p>
-                <br />
                 <div className='buttonss'>
 
 
