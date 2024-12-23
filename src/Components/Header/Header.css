@@ -34,6 +34,13 @@
     max-width: 50vw;
     color: aliceblue;
     font-size: x-large;
+    list-style-type: none;
+    
+}
+.li{
+    color: aliceblue;
+    text-decoration: none;
+    /* background-color: aliceblue; */
     
 }
 
@@ -48,7 +55,7 @@
 
 .buttons {
     font-size: xx-large;
-    background-color: rgb(13, 16, 158);
+    background-color: rgb(31, 31, 233);
 }
 
 /* Responsive Styles for Screen Width <= 880px */
