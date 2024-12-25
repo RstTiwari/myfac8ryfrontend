@@ -3,6 +3,7 @@
     justify-content: space-between; /* Add spacing between child elements */
     align-items: center;
     padding: 20px;
+    /* margin-top: 100px; */
     gap: 20px; /* Adjust spacing between the two sections */
 }
 
@@ -14,7 +15,7 @@
     max-width: 700px;
     height: 400px;
     overflow-y: hidden;
-   
+ 
 }
 
 .On-demand {
@@ -23,6 +24,7 @@
     font-family: Arial, sans-serif;
     font-size: larger;
     text-align: justify;
+    margin-top: 5%;
 }
 .H1{
     font-size: 6vw;
