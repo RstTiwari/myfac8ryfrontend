@@ -1,41 +1,66 @@
+import cncImage from "../../assets/CNC-Machining-1024x536.jpg";
+import laserImage from "../../assets/Laser-Cutting-Parameters.webp";
+import customFabrication from "../../assets/myFac8ry__fabrication.jpeg";
+import coating from "../../assets/myFac8ry__lathe__powder_coating__plating.jpeg";
+import bending from "../../assets/myFac8ry__lathe__powder_coating__plating.jpeg";
+import welding from "../../assets/myfac8ry_laser.jpg";
+
 const cardDatas = [
-    {
-      id: 1,
-      title: "Card 1",
-      text: "This is the first card with some descriptive text.",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      id: 2,
-      title: "Card 2",
-      text: "This is the second card with additional text content.",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      id: 3,
-      title: "Card 3",
-      text: "This is the third card with even longer descriptive text.",
-      image: "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-        id: 4,
-        title: "Card 3",
-        text: "This is the third card with even longer descriptive text.",
-        image: "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg?auto=compress&cs=tinysrgb&w=600",
-      },
-      {
-        id: 5,
-        title: "Card 3",
-        text: "This is the third card with even longer descriptive text.",
-        image: "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg?auto=compress&cs=tinysrgb&w=600",
-      },
-      {
-        id: 6,
-        title: "Card 3",
-        text: "This is the third card with even longer descriptive text.",
-        image: "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg?auto=compress&cs=tinysrgb&w=600",
-      },
-  ];
-  
-  export default cardDatas;
-  
+  {
+    id: 1,
+    title: "CNC MACHINING",
+    features: ["CNC milling", "CNC turning", "Drilling", "Grinding"],
+    image: cncImage,
+  },
+  {
+    id: 2,
+    title: "LASER CUTTING",
+    image: laserImage,
+    features: [
+      "Sheet Metal Cutting",
+      "Fibre laser Cutting",
+      "CNC Punching",
+      "Shearing",
+    ],
+  },
+  {
+    id: 3,
+    title: "CNC BENDING",
+    image: bending,
+    features: [
+      "Press Breaking / Bending",
+      "Panel Bending",
+      "Stamping",
+      "Rolling",
+    ],
+  },
+  {
+    id: 4,
+    title: "WELDING",
+    image: welding,
+    features: ["MIG/MAG Welding", "TIG Welding", "Spot Resistance Welding "],
+  },
+  {
+    id: 5,
+    title: "COATING",
+    image: coating,
+    features: [
+      "Powder Coating",
+      "Galvanic Coating",
+      "Hot Dip Galvanization",
+      "Wet Painting",
+    ],
+  },
+  {
+    id: 6,
+    title: "Custom Fabrication",
+    image: customFabrication,
+    features: [
+      "Mechanical Assembly",
+      "Frame Manufacturing",
+      "Custom prototyping",
+    ],
+  },
+];
+
+export default cardDatas;

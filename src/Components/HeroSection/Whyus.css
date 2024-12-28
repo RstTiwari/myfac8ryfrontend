@@ -1,67 +1,51 @@
-.count{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
-    font-weight: 500;
-    font-size: x-large;
-    text-align: center;
-}
-.NotSure{
-    margin-top: 100px;
+/* Default Styling */
+.count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% auto;
+  flex-wrap: wrap; /* Allow wrapping for responsive behavior */
 }
 
-.textmaindiv{
-    background-color: #e20c03;
-    height: 20vh;
-    width: 100%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3%;
-    /* flex-direction: column; */
+.count > div {
+  text-align: center;
+  flex: 1; /* Allow all items to take equal space */
+  min-width: 200px; /* Ensure each box has a minimum width */
+  padding: 10px;
 }
-.ptext{
-    color: white;
-    font-size: xx-large;
-    margin-left: 2vw;
-
+.ptext {
+    font-size: larger;
+    color: #ffffff;
 }
-.buttons1{
-    display: flex;
-    gap: 3vw;
-    height: 3rem;
-    margin-right: 2vw;
+.textmaindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-size:larger;
+  background-color: #22b378;
 }
 
+.buttons1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px; /* Spacing between buttons */
+  flex-wrap: wrap; /* Allow buttons to stack on smaller screens */
+}
 
-@media (max-width:950px) {
-    .count{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10vw;
-        margin-top: 20px;
-    }
-    .Texts{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: justify;
-        
-    }
-    .ptext{
-      text-wrap: wrap;
-      font-size: 1.4rem;
-    }
-    .buttons1{
-        flex-wrap: wrap;
-        margin-top: 1vw;
-        
-    }
-    .textmaindiv{
-        background-color: #e20c03;
-        height: 30vh;
-        width: 100%;
-        align-items: start;  
-    }
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .count {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align each item */
+    gap: 20px; /* Add spacing between items */
+  }
+
+  .buttons1 {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Spacing between buttons */
+  }
 }
