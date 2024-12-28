@@ -34,6 +34,7 @@ export default function Hero() {
             color: "white",
             padding: "20px",
           }}
+          onClick={() => (window.location.href = "https://ftms.myfac8ry.com/")}
         >
           Get instant quote
         </Button>

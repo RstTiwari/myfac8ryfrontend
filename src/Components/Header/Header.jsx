@@ -45,7 +45,9 @@ export default function Header() {
             <Button
               className="Header_buttons"
               style={{ padding: "20px", color: "black" }}
-              onClick={() => navigate("https://ftms.myfac8ry.com/")}
+              onClick={() =>
+                (window.location.href = "https://ftms.myfac8ry.com/")
+              }
             >
               Get Quote
             </Button>
