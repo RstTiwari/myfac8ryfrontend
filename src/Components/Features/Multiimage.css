@@ -15,9 +15,11 @@
 @media (max-width:900px) {
     .mainimage{
         flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
     .card {
-        width: 90%; 
+        width: 75%; 
         box-sizing: border-box; 
         margin: 5vw;
     }

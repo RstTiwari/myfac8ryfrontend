@@ -32,7 +32,6 @@ export default function Whyus() {
             <p className="Texts">days average lead time</p>
           </div>
         </div>
-
         <div className="textmaindiv">
           <div className="ptext">
             <p> You Don't Have product Design/sketch?</p>

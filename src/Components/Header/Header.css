@@ -99,7 +99,7 @@
 }
 
 /* Responsive Styles for Screen Width <= 1070px (mobile/tablet) */
-@media (max-width: 1070px) {
+@media (max-width: 950px) {
     /* Hide the dropdown by default */
     .dropdown-content {
         display: none;
@@ -137,7 +137,7 @@
 }
 
 /* Mobile View for Extra Small Screens (<=680px) */
-@media (max-width: 680px) {
+@media (max-width: 950px) {
     /* Adjust dropdown drawer position and style for small screens */
     .dropdown-content {
         padding: 10px;
@@ -162,7 +162,7 @@
 }
 
 /* Responsive Styles for Screen Width <= 880px */
-@media (max-width: 1070px) {
+@media (max-width: 950px) {
     .call_email_icon {
         display: flex;
         gap: 5vw;
@@ -224,7 +224,7 @@
 }
 
 /* Responsive Styles for Screen Width <= 680px */
-@media (max-width: 680px) {
+@media (max-width: 950px) {
     .main-nav {
         flex-direction: column;
         /* width: 100%; */

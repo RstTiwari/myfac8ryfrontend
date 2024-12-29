@@ -49,37 +49,40 @@ img{
 
 }
 
-@media (max-width:900px){
-    .About-us{
+@media (max-width:950px) {
+    .About-us {
         flex-direction: column;
         width: 100%;
+        align-items: center; /* Centrally align items */
         margin-top: 2%;
     }
-    .About-Text{
+    .About-Text {
         width: 90%;
-        margin-left: 5vw; 
+        margin: 0 auto; /* Center align the text */
+        text-align: center; /* Center the text content */
     }
-    .Services-text{
+    .Services-text {
         text-align: center;
         font-family: Arial, sans-serif;
         width: 90%;
+        margin: 0 auto; /* Center align the text */
     }
-    .contact-us{
-        /* text-align: justify; */
+    .contact-us {
         font-family: Arial, sans-serif;
         width: 90%;
-        margin-left: 5vw;       
+        margin: 0 auto; /* Center align the text */
+        text-align: center; /* Center the text content */
     }
-    .iconss{
+    .iconss {
         display: flex;
         gap: 4vw;
+        justify-content: center; /* Center align the icons */
     }
-    .Copyright-footer{
-       flex-direction: column;
-       align-items: center;
-       gap: 2vw;
+    .Copyright-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
         margin: 2vw;
-    
+        text-align: center; /* Center the text content */
     }
-    
 }

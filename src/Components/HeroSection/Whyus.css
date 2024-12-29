@@ -48,4 +48,10 @@
     flex-direction: column; /* Stack buttons vertically */
     gap: 10px; /* Spacing between buttons */
   }
+  .textmaindiv {
+       height: auto; /* Allow dynamic height on smaller screens */
+    padding: 20px; /* Ensure padding is preserved */
+  text-align: center;
+   align-items: center;
+  }
 }

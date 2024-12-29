@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react";
+
 const FeatureCard = ({ title, image, features }) => {
+  const [width, setWidth] = useState(0);
+
+  console.log(innerWidth, "==");
+  useEffect(() => {
+    let innerWidth = window.innerWidth > 950 ? "400px" : "100%";
+    setWidth(innerWidth);
+  }, [width]);
   return (
     <div
       style={{
-        width: "400px",
+        width: width,
         border: "1px solid #ddd",
         borderRadius: "8px",
         overflow: "hidden",
@@ -32,7 +41,6 @@ const FeatureCard = ({ title, image, features }) => {
           width: "100%",
           height: "180px",
           background: `url(${image}) center/cover no-repeat`,
-          opacity: 0.5, // 50% opacity
         }}
       ></div>
 

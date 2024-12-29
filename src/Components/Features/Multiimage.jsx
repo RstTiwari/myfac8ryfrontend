@@ -5,7 +5,7 @@ import FeatureCard from "./FeatureCard";
 export default function CardGroupExample() {
   return (
     <>
-      <h1 style={{ marginTop: "2vw", marginLeft: "4vw" }}>
+      <h1 style={{ marginTop: "5%", marginLeft: "3%" }}>
         Process capabilities
       </h1>
       <div className="mainimage">

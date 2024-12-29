@@ -41,18 +41,6 @@ export default function Header() {
           <div className="clear" onClick={toggleMenu}>
             <ClearIcon />
           </div>
-          <li className="li">
-            <Button
-              className="Header_buttons"
-              style={{ padding: "20px", color: "black" }}
-              onClick={() =>
-                (window.location.href = "https://ftms.myfac8ry.com/")
-              }
-            >
-              Get Quote
-            </Button>
-          </li>
-
           {/* Product Dropdown */}
           <li className="li product">
             <Link to="/" className="li">
@@ -87,6 +75,17 @@ export default function Header() {
           <Link to={"/contact"} className="li">
             <li className="li">Contact Us</li>
           </Link>
+          <li className="li">
+            <Button
+              className="Header_buttons"
+              style={{ padding: "20px", color: "black" }}
+              onClick={() =>
+                (window.location.href = "https://ftms.myfac8ry.com/")
+              }
+            >
+              Get Quote
+            </Button>
+          </li>
         </ul>
       </nav>
     </div>
