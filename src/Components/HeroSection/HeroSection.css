@@ -46,7 +46,7 @@ button {
 
 /* Responsive Styles for Small Screens */
 /* Responsive Styles for Small Screens */
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     .main-demand {
         flex-direction: column;
         align-items: center;

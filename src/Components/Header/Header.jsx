@@ -24,10 +24,18 @@ export default function Header() {
           MyFac8ry <br />
         </div>
         <div className="call_email_icon">
-          <div className="call">
+          <div
+            className="call"
+            onClick={() => (window.location.href = "tel:+8767948130")} // Replace with your desired phone number
+          >
             <PhoneEnabledIcon />
           </div>
-          <div className="email">
+          <div
+            className="email"
+            onClick={
+              () => window.open("https://wa.me/918767948130", "_blank") // WhatsApp Web link
+            }
+          >
             <WhatsApp />
           </div>
           {/* Toggle Button */}
