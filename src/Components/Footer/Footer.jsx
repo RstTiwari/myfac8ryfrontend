@@ -48,10 +48,10 @@ export default function Footer() {
                             UTC +3 / Eastern European Time (EET)</p>
                             <div className='iconss'>
                                
-                                <FacebookIcon style={{fontSize:"50px"}}/>
-                                <YouTubeIcon style={{fontSize:"50px"}}/>
-                                <InstagramIcon style={{fontSize:"50px"}}/>
-                                <LinkedInIcon style={{fontSize:"50px"}}/>
+                                <a href=""><FacebookIcon style={{fontSize:"50px"}}/></a>
+                               <a href=""> <YouTubeIcon style={{fontSize:"50px"}}/></a>
+                                <a href=""><InstagramIcon style={{fontSize:"50px"}}/></a>
+                               <a href=""> <LinkedInIcon style={{fontSize:"50px"}}/></a>
                             </div>
                     
                     </div>

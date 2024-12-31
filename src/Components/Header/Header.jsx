@@ -6,10 +6,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import ClearIcon from '@mui/icons-material/Clear';
 // import Contact from './Contact';
 import { Link } from 'react-router-dom';
-
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -41,7 +39,7 @@ export default function Header() {
                     </div>
 
                     {/* Nav Links */}
-                    <ul className={menuOpen ? "true show" : "navlink"}>
+                    <ul className={menuOpen ? "true" : "navlink"}>
                         <div className="clear" onClick={toggleMenu}>
                             <ClearIcon />
                         </div>

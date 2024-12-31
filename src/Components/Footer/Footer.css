@@ -35,10 +35,13 @@ img{
     font-family: Arial, sans-serif;
     width: 30vw;
 }
-.iconss{
-    display: flex;
-    gap: 2vw;
+.iconss a{
+    /* display: flex; */
+    /* gap: 2vw; */
     color: brown;   
+}
+.iconss a:hover{
+    color: rgb(15, 232, 240);
 }
 
 .Copyright-footer{

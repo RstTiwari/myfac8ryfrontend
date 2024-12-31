@@ -12,9 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #231f1f;
+    background-color: #161414;
     position:fixed;
-    /* margin-top: 5%; */
+    top: 0px;
+    z-index: 1;
 }
 
 /* Logo Styles */
@@ -22,6 +23,8 @@
     font-size: 1.9rem;
     font-weight: bold;
     margin: 1vw;
+    position:sticky;
+    top: 0px;
 }
 
 /* Navigation Links */
@@ -39,9 +42,10 @@
 }
 .li{
     color: aliceblue;
-    text-decoration: none;
-    /* background-color: aliceblue; */
-    
+    text-decoration: none;    
+}
+.li:hover{
+    background-color: rgb(243, 14, 14);
 }
 
 /* Hidden Elements (for desktop view) */
@@ -64,6 +68,7 @@
         display: flex;
         gap: 5vw;
         color: aliceblue;
+        margin-right: 1vw;
     }
 
     .icon {
@@ -99,16 +104,8 @@
     padding: 10px;
     list-style: none;
     color: aliceblue;
-    opacity: 0;
-    transform: translateY(-20px);
     transition: opacity 0.9s ease-in, transform 0.s ease; /* Adjusted duration */
 }
-
-.true.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 
     .true li {
         color: aliceblue;
@@ -121,6 +118,10 @@
         font-size: x-large;
         background-color: red;
     }
+    canvas[style*="z-index: 1000000000"] {
+        display: none;
+    }
+
 }
 
 /* Responsive Styles for Screen Width <= 680px */
@@ -139,8 +140,8 @@
     .true {
         width: 100%;
         top: 0;
-        right: 0.5%;
-        border-top-left-radius: 10px;
+        /* right: 0.5%; */
+        /* border-top-left-radius: 10px; */
     }
 
     .true li {
@@ -168,4 +169,8 @@
         font-size: large;
         color: aliceblue;
     }
+    canvas[style*="z-index: 1000000000"] {
+        display: none;
+    }
+
 }
